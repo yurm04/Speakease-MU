@@ -1,0 +1,7 @@
+# OS generated file
+.DS_Store
+.DS_store
+
+#Sass Cache
+assets/.sass-cache/
+assets/.sass-cache/*

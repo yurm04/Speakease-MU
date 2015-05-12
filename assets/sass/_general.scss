@@ -43,7 +43,13 @@ a.cta {
   padding-left: 24px;
   color: $white;
   text-transform: uppercase;
+  border: 2px solid $coral;
   @include border-radius(3px);
+
+  /* Hover Transition */
+  &:hover {
+    @include button-hover($white, $coral);
+  }
 }
 
 // align

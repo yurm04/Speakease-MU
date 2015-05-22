@@ -2324,6 +2324,109 @@ th {
 
 /* Colors */
 /* Spacing */
+/* line 5, ../sass/_utilities.scss */
+.bg-white {
+  background-color: #fafafa;
+  color: #333333;
+}
+
+/* line 10, ../sass/_utilities.scss */
+.bg-blue {
+  background-color: #99cccc;
+}
+
+/* line 18, ../sass/_utilities.scss */
+.bg-dark {
+  background-color: #6e7982;
+  color: #fafafa;
+}
+
+/* line 23, ../sass/_utilities.scss */
+.color-white {
+  color: #fafafa;
+}
+
+/* line 27, ../sass/_utilities.scss */
+.color-dark {
+  color: #333333;
+}
+
+/* line 31, ../sass/_utilities.scss */
+.color-coral {
+  color: #f56f59;
+}
+
+/* line 35, ../sass/_utilities.scss */
+.color-orange {
+  color: #f8c48b;
+}
+
+/* line 39, ../sass/_utilities.scss */
+.color-grey {
+  color: #6e7982;
+}
+
+/* line 47, ../sass/_utilities.scss */
+.buffer {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+/* line 52, ../sass/_utilities.scss */
+.top-buffer {
+  padding-top: 48px;
+}
+
+/* line 56, ../sass/_utilities.scss */
+.bottom-buffer {
+  padding-bottom: 48px;
+}
+
+/* line 60, ../sass/_utilities.scss */
+.half-buffer {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+/* line 65, ../sass/_utilities.scss */
+.half-bottom {
+  padding-bottom: 24px;
+}
+
+/* line 69, ../sass/_utilities.scss */
+.half-top {
+  padding-top: 24px;
+}
+
+/* line 77, ../sass/_utilities.scss */
+.inline {
+  display: inline;
+}
+
+/* line 82, ../sass/_utilities.scss */
+img.center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 88, ../sass/_utilities.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 93, ../sass/_utilities.scss */
+h1.center, h2.center, h3.center, h4.center, h5.center, h6.center, p.center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 105, ../sass/_utilities.scss */
+.text-block {
+  width: 70%;
+}
+
 /* Mixins */
 /****************************************************************
 TYPOGRAPHY
@@ -2343,11 +2446,11 @@ h1, h2, h5, p, ul {
 h1, h2 {
   margin: 0;
   text-align: center;
-  padding: 48px 0 48px 0;
 }
 
-/* line 22, ../sass/_fonts.scss */
+/* line 21, ../sass/_fonts.scss */
 h1 {
+  padding: 48px 0 48px 0;
   font-size: 48px;
   text-transform: uppercase;
 }
@@ -2357,13 +2460,24 @@ h2 {
   font: normal 400 36px/1.5 'Josefin Slab', Georgia, serif;
   font-size: 36px;
   font-variant: small-caps;
+  padding-bottom: 48px;
 }
 
-/* line 33, ../sass/_fonts.scss */
+/* line 34, ../sass/_fonts.scss */
+h5 {
+  font-size: 18px;
+}
+
+/* line 38, ../sass/_fonts.scss */
+p.copyright {
+  font-size: 12px;
+}
+
+/* line 42, ../sass/_fonts.scss */
 nav li {
   font-variant: small-caps;
 }
-/* line 35, ../sass/_fonts.scss */
+/* line 44, ../sass/_fonts.scss */
 nav li a {
   color: #fafafa;
 }
@@ -2378,7 +2492,7 @@ ICON FONTS
   font-weight: normal;
   font-style: normal;
 }
-/* line 55, ../sass/_fonts.scss */
+/* line 64, ../sass/_fonts.scss */
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon';
   speak: none;
@@ -2392,67 +2506,62 @@ ICON FONTS
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 69, ../sass/_fonts.scss */
+/* line 78, ../sass/_fonts.scss */
 .icon-bubbles4:before {
   content: "\e970";
 }
 
-/* line 73, ../sass/_fonts.scss */
+/* line 82, ../sass/_fonts.scss */
 .icon-user-tie:before {
   content: "\e976";
 }
 
-/* line 77, ../sass/_fonts.scss */
+/* line 86, ../sass/_fonts.scss */
 .icon-airplane:before {
   content: "\e9af";
 }
 
-/* line 81, ../sass/_fonts.scss */
+/* line 90, ../sass/_fonts.scss */
 .icon-star-full:before {
   content: "\e9d9";
 }
 
-/* Nav */
-/* line 2, ../sass/_general.scss */
+/* line 5, ../sass/_general.scss */
+nav hr {
+  width: 70%;
+  margin-bottom: 0;
+}
+/* line 9, ../sass/_general.scss */
 nav ul {
   list-style: none;
   padding: 0 115px 0 115px;
   text-align: center;
 }
-/* line 6, ../sass/_general.scss */
+/* line 13, ../sass/_general.scss */
 nav ul li {
-  padding-right: 24%;
+  padding-right: 20%;
 }
-/* line 8, ../sass/_general.scss */
+/* line 15, ../sass/_general.scss */
 nav ul li:last-child {
   padding-right: 0;
 }
-
-/* line 14, ../sass/_general.scss */
-.inline {
-  display: inline;
+/* line 20, ../sass/_general.scss */
+nav a:hover {
+  color: #f56f59;
+  text-decoration: none;
 }
 
-/* line 18, ../sass/_general.scss */
-.buffer {
-  padding: 48px 0 48px 0;
+/* line 26, ../sass/_general.scss */
+section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+/* line 29, ../sass/_general.scss */
+section a.cta:last-of-type {
+  margin-bottom: 0;
 }
 
-/* line 22, ../sass/_general.scss */
-img.center {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-/* line 28, ../sass/_general.scss */
-p.center {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-/* line 34, ../sass/_general.scss */
+/* line 38, ../sass/_general.scss */
 a.cta {
   margin: 48px auto 48px auto;
   height: 48px;
@@ -2472,7 +2581,7 @@ a.cta {
   border-radius: 3px;
   /* Hover Transition */
 }
-/* line 50, ../sass/_general.scss */
+/* line 54, ../sass/_general.scss */
 a.cta:hover {
   background-color: #fafafa;
   border-color: #f56f59;
@@ -2483,42 +2592,67 @@ a.cta:hover {
   transition: background-color .25s ease, border-color .25s ease, color .25s ease;
 }
 
-/* line 56, ../sass/_general.scss */
-.align-center {
+/* line 63, ../sass/_general.scss */
+.blocks {
+  padding-bottom: 48px;
+}
+/* line 65, ../sass/_general.scss */
+.blocks .circle {
+  height: 168px;
+  width: 168px;
+  background-color: #fafafa;
+  border-radius: 50%;
+  margin: 0 auto 24px auto;
+}
+/* line 72, ../sass/_general.scss */
+.blocks h5 {
+  padding-bottom: 24px;
+}
+/* line 76, ../sass/_general.scss */
+.blocks [class^="icon-"], .blocks [class*=" icon-"] {
+  font-size: 64px;
+  line-height: 168px;
+  color: #99cccc;
+}
+
+/* line 87, ../sass/_general.scss */
+.review {
+  width: 60%;
+  margin: 0 auto 0 auto;
+  text-align: left;
+}
+/* line 91, ../sass/_general.scss */
+.review .stars {
+  display: inline-block;
+  margin-right: 24px;
+}
+/* line 95, ../sass/_general.scss */
+.review .icon-star-full {
+  color: #f8c48b;
+}
+/* line 98, ../sass/_general.scss */
+.review h5 {
+  display: inline-block;
+}
+
+/* line 107, ../sass/_general.scss */
+footer {
   text-align: center;
 }
-
-/* line 61, ../sass/_general.scss */
-.text-block {
-  width: 70%;
+/* line 109, ../sass/_general.scss */
+footer h5 {
+  font-family: 'Lato', Georgia, serif;
 }
-
-/* line 66, ../sass/_general.scss */
-.bg-white {
-  background-color: #fafafa;
+/* line 112, ../sass/_general.scss */
+footer a {
+  color: #f8c48b;
 }
-
-/* line 70, ../sass/_general.scss */
-.bg-blue {
-  background-color: #99cccc;
-}
-
-/* line 78, ../sass/_general.scss */
-.color-white {
-  color: #fafafa;
-}
-
-/* line 82, ../sass/_general.scss */
-.color-dark {
-  color: #333333;
-}
-
-/* line 86, ../sass/_general.scss */
-.color-coral {
+/* line 114, ../sass/_general.scss */
+footer a:hover {
   color: #f56f59;
+  text-decoration: underline;
 }
-
-/* line 90, ../sass/_general.scss */
-.color-grey {
-  color: #6e7982;
+/* line 119, ../sass/_general.scss */
+footer hr {
+  width: 25%;
 }

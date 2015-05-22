@@ -1,36 +1,40 @@
-/* Nav */
-nav ul {
-  list-style: none;
-  padding: 0 115px 0 115px;
-  text-align: center;
-  li {
-    padding-right: 24%;
-    &:last-child {
-      padding-right: 0;
+////////////////
+// NAVIGATION //
+////////////////
+nav {
+  hr {
+    width: 70%;
+    margin-bottom: 0;
+  }
+  ul {
+    list-style: none;
+    padding: 0 115px 0 115px;
+    text-align: center;
+    li {
+      padding-right: 20%;
+      &:last-child {
+        padding-right: 0;
+      }
     }
+  }
+  a:hover {
+    color: $coral;
+    text-decoration: none;
   }
 }
 
-.inline {
-  display: inline;
+section {
+  padding-top: $buffer;
+  padding-bottom: $buffer;
+  a.cta:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
-.buffer {
-  padding: $buffer 0 $buffer 0
-}
-
-img.center {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-p.center {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;  
-}
-
+/////////////
+// BUTTONS //
+/////////////
+///
 a.cta {
   margin: $buffer auto $buffer auto;
   height: 48px;
@@ -52,41 +56,66 @@ a.cta {
   }
 }
 
-// align
-.align-center {
+////////////////
+// BOX BLOCKS //
+////////////////
+
+.blocks {
+  .circle {
+    height: 168px;
+    width: 168px;
+    background-color: $white;
+    border-radius: 50%;
+    margin: 0 auto $half-buffer auto;
+  }
+  h5 {
+    // font-size: 18px;
+    padding-bottom: $half-buffer;
+  }
+  [class^="icon-"], [class*=" icon-"] {
+    font-size: 64px;
+    line-height: 168px;
+    color: $blue;
+  } 
+}
+
+/////////////
+// REVIEWS //
+/////////////
+
+.review {
+  width: 60%;
+  margin: 0 auto 0 auto;
+  text-align: left;
+  .stars {
+    display: inline-block;
+    margin-right: $half-buffer;
+  }
+  .icon-star-full {
+    color: $orange;
+  }
+  h5 {
+    display: inline-block;
+  }
+}
+
+////////////
+// FOOTER //
+////////////
+
+footer {
   text-align: center;
-}
-
-// text block
-.text-block {
-  width: 70%;
-}
-
-// Colors
-.bg-white {
-  background-color: $white;
-}
-
-.bg-blue {
-  background-color: $blue;
-}
-
-.bg-pattern {
-
-}
-
-.color-white {
-  color: $white;
-}
-
-.color-dark {
-  color: $dark-text;
-}
-
-.color-coral {
-  color: $coral;
-}
-
-.color-grey {
-  color: $grey;
+  h5 {
+    font-family: 'Lato', Georgia, serif;
+  }
+  a {
+    color: $orange;
+    &:hover {
+      color: $coral;
+      text-decoration: underline;
+    }
+  }
+  hr {
+    width: 25%;
+  }
 }

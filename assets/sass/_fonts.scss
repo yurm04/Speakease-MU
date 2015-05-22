@@ -16,10 +16,10 @@ h1, h2, h5, p, ul {
 h1, h2 {
 	margin: 0;
 	text-align: center;
-	padding: $buffer 0 $buffer 0;
 }
 
 h1 {
+	padding: $buffer 0 $buffer 0;
 	font-size: 48px;
 	text-transform: uppercase;
 }
@@ -28,6 +28,15 @@ h2 {
 	font: normal 400 36px/1.5 'Josefin Slab', Georgia, serif;
 	font-size: 36px;
 	font-variant: small-caps;
+	padding-bottom: $buffer;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+p.copyright {
+	font-size: 12px;
 }
 
 nav li {

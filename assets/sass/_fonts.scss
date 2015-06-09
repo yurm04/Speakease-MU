@@ -9,7 +9,7 @@ body {
 	font: normal 400 16px/1.5 'Lato', Helvetica, Arial, sans-serif;
 }
 
-h1, h2, h5, p, ul {
+h1, h2, h3, p, ul {
 	margin: 0;
 }
 
@@ -31,7 +31,7 @@ h2 {
 	padding-bottom: $buffer;
 }
 
-h5 {
+h3 {
 	font-size: 18px;
 }
 

@@ -1,6 +1,6 @@
-////////////////
-// NAVIGATION //
-////////////////
+/****************************************************************
+NAVIGATION
+****************************************************************/
 nav {
   hr {
     width: 70%;
@@ -31,14 +31,13 @@ section {
   }
 }
 
-/////////////
-// BUTTONS //
-/////////////
-///
+/****************************************************************
+BUTTONS
+****************************************************************/
 a.cta {
   margin: $buffer auto $buffer auto;
   height: 48px;
-  line-height: 48px;
+  line-height: 46px;
   text-align: center;
   background-color: $coral;
   text-decoration: none;
@@ -56,9 +55,9 @@ a.cta {
   }
 }
 
-////////////////
-// BOX BLOCKS //
-////////////////
+/****************************************************************
+BOX BLOCKS
+****************************************************************/
 
 .blocks {
   .circle {
@@ -79,9 +78,9 @@ a.cta {
   } 
 }
 
-/////////////
-// REVIEWS //
-/////////////
+/****************************************************************
+REVIEWS
+****************************************************************/
 
 .review {
   width: 60%;
@@ -99,9 +98,17 @@ a.cta {
   }
 }
 
-////////////
-// FOOTER //
-////////////
+/****************************************************************
+INSTRUCTOR
+****************************************************************/
+
+.instructor {
+  border-radius: 3px;
+}
+
+/****************************************************************
+FOOTER
+****************************************************************/
 
 footer {
   text-align: center;
@@ -117,5 +124,92 @@ footer {
   }
   hr {
     width: 25%;
+  }
+}
+
+/****************************************************************
+FORM
+****************************************************************/
+
+form {
+  width: 500px;
+  margin: 0 auto;
+  ul {
+    list-style: none;
+  }
+  li {
+    margin: 10px 0 10px 0;
+  }
+}
+
+label {
+  padding-right: $half-buffer;
+}
+
+input {
+  margin: 10px 10px 10px 0;
+  &.submit {
+    margin-right: auto;
+    text-align: right;
+    margin-left: auto;
+    display: block;
+  }
+}
+
+/****************************************************************
+TABLE
+****************************************************************/
+table {
+  margin: 0 auto 0 auto;
+  text-align: center;
+  td {
+    padding: 10px 0 10px;
+  }
+}
+/****************************************************************
+TYPOGRAPHY
+****************************************************************/
+
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);     // Google Font
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font: normal 400 16px/1.5 'Lato', Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, p, ul {
+  margin: 0;
+}
+
+h1, h2 {
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  padding: $buffer 0 $buffer 0;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font: normal 400 36px/1.5 'Josefin Slab', Georgia, serif;
+  font-size: 36px;
+  font-variant: small-caps;
+  padding-bottom: $buffer;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p.copyright {
+  font-size: 12px;
+}
+
+nav li {
+  font-variant: small-caps;
+  a {
+    color: $white;
   }
 }

@@ -2336,7 +2336,7 @@ th {
 }
 
 /* line 18, ../sass/_utilities.scss */
-.bg-dark {
+.bg-grey {
   background-color: #6e7982;
   color: #fafafa;
 }
@@ -2527,41 +2527,57 @@ ICON FONTS
 }
 
 /* line 5, ../sass/_general.scss */
+header {
+  width: 100%;
+}
+
+/* line 10, ../sass/_general.scss */
+.logo {
+  margin-left: 30px;
+}
+
+/* line 14, ../sass/_general.scss */
+nav {
+  display: inline-block;
+  right: 3em;
+}
+/* line 18, ../sass/_general.scss */
 nav hr {
   width: 70%;
   margin-bottom: 0;
 }
-/* line 9, ../sass/_general.scss */
+/* line 22, ../sass/_general.scss */
 nav ul {
   list-style: none;
-  padding: 0 115px 0 115px;
   text-align: center;
+  display: inline-block;
 }
-/* line 13, ../sass/_general.scss */
+/* line 27, ../sass/_general.scss */
 nav ul li {
-  padding-right: 20%;
+  margin-right: 5em;
+  font-size: 1.3em;
 }
-/* line 15, ../sass/_general.scss */
+/* line 30, ../sass/_general.scss */
 nav ul li:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
-/* line 20, ../sass/_general.scss */
+/* line 35, ../sass/_general.scss */
 nav a:hover {
   color: #f56f59;
   text-decoration: none;
 }
 
-/* line 26, ../sass/_general.scss */
+/* line 41, ../sass/_general.scss */
 section {
   padding-top: 48px;
   padding-bottom: 48px;
 }
-/* line 29, ../sass/_general.scss */
+/* line 44, ../sass/_general.scss */
 section a.cta:last-of-type {
   margin-bottom: 0;
 }
 
-/* line 38, ../sass/_general.scss */
+/* line 53, ../sass/_general.scss */
 a.cta {
   margin: 48px auto 48px auto;
   height: 48px;
@@ -2581,7 +2597,7 @@ a.cta {
   border-radius: 3px;
   /* Hover Transition */
 }
-/* line 54, ../sass/_general.scss */
+/* line 69, ../sass/_general.scss */
 a.cta:hover {
   background-color: #fafafa;
   border-color: #f56f59;
@@ -2592,11 +2608,7 @@ a.cta:hover {
   transition: background-color .25s ease, border-color .25s ease, color .25s ease;
 }
 
-/* line 63, ../sass/_general.scss */
-.blocks {
-  padding-bottom: 48px;
-}
-/* line 65, ../sass/_general.scss */
+/* line 79, ../sass/_general.scss */
 .blocks .circle {
   height: 168px;
   width: 168px;
@@ -2604,55 +2616,55 @@ a.cta:hover {
   border-radius: 50%;
   margin: 0 auto 24px auto;
 }
-/* line 72, ../sass/_general.scss */
+/* line 86, ../sass/_general.scss */
 .blocks h5 {
   padding-bottom: 24px;
 }
-/* line 76, ../sass/_general.scss */
+/* line 90, ../sass/_general.scss */
 .blocks [class^="icon-"], .blocks [class*=" icon-"] {
   font-size: 64px;
   line-height: 168px;
   color: #99cccc;
 }
 
-/* line 87, ../sass/_general.scss */
+/* line 101, ../sass/_general.scss */
 .review {
   width: 60%;
   margin: 0 auto 0 auto;
   text-align: left;
 }
-/* line 91, ../sass/_general.scss */
+/* line 105, ../sass/_general.scss */
 .review .stars {
   display: inline-block;
   margin-right: 24px;
 }
-/* line 95, ../sass/_general.scss */
+/* line 109, ../sass/_general.scss */
 .review .icon-star-full {
   color: #f8c48b;
 }
-/* line 98, ../sass/_general.scss */
+/* line 112, ../sass/_general.scss */
 .review h5 {
   display: inline-block;
 }
 
-/* line 107, ../sass/_general.scss */
+/* line 121, ../sass/_general.scss */
 footer {
   text-align: center;
 }
-/* line 109, ../sass/_general.scss */
+/* line 123, ../sass/_general.scss */
 footer h5 {
   font-family: 'Lato', Georgia, serif;
 }
-/* line 112, ../sass/_general.scss */
+/* line 126, ../sass/_general.scss */
 footer a {
   color: #f8c48b;
 }
-/* line 114, ../sass/_general.scss */
+/* line 128, ../sass/_general.scss */
 footer a:hover {
   color: #f56f59;
   text-decoration: underline;
 }
-/* line 119, ../sass/_general.scss */
+/* line 133, ../sass/_general.scss */
 footer hr {
   width: 25%;
 }

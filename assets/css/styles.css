@@ -1,3 +1,12 @@
+/*********************************************************
+ * NORMALIZE
+ *********************************************************/
+/* line 6, ../sass/_normalize2.scss */
+body, ul, hr, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
 /* Colors */
 /* Spacing */
 /* line 5, ../sass/_utilities.scss */
@@ -43,23 +52,110 @@
 }
 
 /* Mixins */
-/*********************************************************
- * NORMALIZE
- *********************************************************/
-/* line 6, ../sass/_general.scss */
-body, ul, hr, h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-  padding: 0;
+/****************************************************************
+TYPOGRAPHY
+****************************************************************/
+/* line 7, ../sass/_fonts.scss */
+h1 {
+  color: #fafafa;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5em;
+  margin: 64px 0;
 }
 
-/* line 11, ../sass/_general.scss */
+/****************************************************************
+ICON FONTS
+****************************************************************/
+@font-face {
+  font-family: 'icomoon';
+  src: url("../../fonts/icomoon.eot?-a4xqdd");
+  src: url("../../fonts/icomoon.eot?#iefix-a4xqdd") format("embedded-opentype"), url("../../fonts/icomoon.woff?-a4xqdd") format("woff"), url("../../fonts/icomoon.ttf?-a4xqdd") format("truetype"), url("../../fonts/icomoon.svg?-a4xqdd#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 30, ../sass/_fonts.scss */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 44, ../sass/_fonts.scss */
+.icon-bubbles4:before {
+  content: "\e970";
+}
+
+/* line 48, ../sass/_fonts.scss */
+.icon-user-tie:before {
+  content: "\e976";
+}
+
+/* line 52, ../sass/_fonts.scss */
+.icon-airplane:before {
+  content: "\e9af";
+}
+
+/* line 56, ../sass/_fonts.scss */
+.icon-star-full:before {
+  content: "\e9d9";
+}
+
+/* line 3, ../sass/_general.scss */
 body {
   color: #000;
   background-color: #99cccc;
   font: normal 400 16px Lato, 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+  position: relative;
 }
 
-/* line 17, ../sass/_general.scss */
+/* line 10, ../sass/_general.scss */
 ul {
   list-style: none;
+}
+
+/* line 15, ../sass/_general.scss */
+header {
+  margin-top: 16px;
+  margin-bottom: 64px;
+}
+
+/* line 20, ../sass/_general.scss */
+nav {
+  display: inline-block;
+  float: right;
+  position: relative;
+  top: 41px;
+}
+
+/* line 27, ../sass/_general.scss */
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+/* line 31, ../sass/_general.scss */
+nav li {
+  display: inline;
+  margin-right: 64px;
+}
+
+/* line 36, ../sass/_general.scss */
+nav a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+/* line 41, ../sass/_general.scss */
+.nav-logo {
+  width: 109px;
+  height: 98px;
+  background: url("images/logo-small.png") no-repeat center;
+  display: inline-block;
 }

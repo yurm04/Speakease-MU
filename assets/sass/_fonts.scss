@@ -2,48 +2,14 @@
 TYPOGRAPHY
 ****************************************************************/
 
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700);			// Google Font
-
-body {
-	-webkit-font-smoothing: antialiased;
-	font: normal 400 16px/1.5 'Lato', Helvetica, Arial, sans-serif;
-}
-
-h1, h2, h3, p, ul {
-	margin: 0;
-}
-
-h1, h2 {
-	margin: 0;
-	text-align: center;
-}
+// @import url(http:\/\/fonts.googleapis.com/css?family=Lato:400,700);			// Google Font
 
 h1 {
-	padding: $buffer 0 $buffer 0;
-	font-size: 48px;
+	color: $white;
 	text-transform: uppercase;
-}
-
-h2 {
-	font: normal 400 36px/1.5 'Josefin Slab', Georgia, serif;
-	font-size: 36px;
-	font-variant: small-caps;
-	padding-bottom: $buffer;
-}
-
-h3 {
-	font-size: 18px;
-}
-
-p.copyright {
-	font-size: 12px;
-}
-
-nav li {
-	font-variant: small-caps;
-	a {
-		color: $white;
-	}
+	text-align: center;
+	font-size: 2.5em;
+	margin: $buffer 0;
 }
 
 /****************************************************************

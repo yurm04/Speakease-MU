@@ -1,19 +1,48 @@
-/*********************************************************
- * NORMALIZE
- *********************************************************/
 
-// Reset margin and padding
-body, ul, hr, h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-  padding: 0;
-}
 
  body {
   color: #000;
   background-color: $blue;
-  font: normal 400 16px Lato, 'Helvetica Nueue', Helvetica, Arial, sans-serif; 
+  font: normal 400 16px Lato, 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+  position: relative;
  }
 
  ul {
   list-style: none;
+  // display: inline-block;
  }
+
+ header {
+  margin-top: $quater-buffer;
+  margin-bottom: $buffer;
+ }
+
+nav {
+  display: inline-block;
+  float: right;
+  position: relative;
+  top: 41px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: $buffer;
+}
+
+nav a {
+  text-decoration: none;
+  color: $white;
+}
+
+.nav-logo {
+  width: 109px;
+  height: 98px;
+  background: url('images/logo-small.png') no-repeat center;
+  display: inline-block;
+}
+
+

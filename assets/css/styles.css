@@ -70,8 +70,25 @@ LAYOUT
 }
 
 /* line 52, ../sass/_utilities.scss */
-p.text-block {
+.text-block {
   margin: 0 10%;
+}
+
+/* line 56, ../sass/_utilities.scss */
+hr {
+  max-width: 250px;
+  margin: 16px auto;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(139, 150, 158, 0), rgba(139, 150, 158, 0.75), transparent);
+}
+
+/****************************************************************
+ALIGNMENT
+****************************************************************/
+/* line 68, ../sass/_utilities.scss */
+.text-center {
+  text-align: center;
 }
 
 /* Mixins */
@@ -79,27 +96,42 @@ p.text-block {
 TYPOGRAPHY
 ****************************************************************/
 /* line 7, ../sass/_fonts.scss */
-h1, h2 {
-  text-transform: uppercase;
+h1, h2, h3 {
   text-align: center;
 }
 
-/* line 12, ../sass/_fonts.scss */
+/* line 11, ../sass/_fonts.scss */
+h1, h2 {
+  text-transform: uppercase;
+}
+
+/* line 15, ../sass/_fonts.scss */
 h1 {
   color: #fafafa;
   font-size: 3em;
-  margin: 64px 0;
+  margin: 64px 0 117px 0;
 }
 
-/* line 18, ../sass/_fonts.scss */
+/* line 21, ../sass/_fonts.scss */
 h2 {
   font-size: 2em;
   margin-bottom: 32px;
 }
 
-/* line 23, ../sass/_fonts.scss */
+/* line 27, ../sass/_fonts.scss */
 p {
   line-height: 1.4;
+}
+
+/* line 31, ../sass/_fonts.scss */
+p.copyright {
+  font-size: .8em;
+  color: #fafafa;
+}
+
+/* line 36, ../sass/_fonts.scss */
+section p {
+  text-align: left;
 }
 
 /****************************************************************
@@ -112,7 +144,7 @@ ICON FONTS
   font-weight: normal;
   font-style: normal;
 }
-/* line 42, ../sass/_fonts.scss */
+/* line 55, ../sass/_fonts.scss */
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon';
   speak: none;
@@ -126,22 +158,22 @@ ICON FONTS
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 56, ../sass/_fonts.scss */
+/* line 69, ../sass/_fonts.scss */
 .icon-bubbles4:before {
   content: "\e970";
 }
 
-/* line 60, ../sass/_fonts.scss */
+/* line 73, ../sass/_fonts.scss */
 .icon-user-tie:before {
   content: "\e976";
 }
 
-/* line 64, ../sass/_fonts.scss */
+/* line 77, ../sass/_fonts.scss */
 .icon-airplane:before {
   content: "\e9af";
 }
 
-/* line 68, ../sass/_fonts.scss */
+/* line 81, ../sass/_fonts.scss */
 .icon-star-full:before {
   content: "\e9d9";
 }
@@ -209,7 +241,7 @@ section {
 }
 
 /****************************************************************
-BUTTONS& CTA
+BUTTONS, LINKS, CTAs
 ****************************************************************/
 /* line 62, ../sass/_general.scss */
 .cta {
@@ -223,6 +255,91 @@ BUTTONS& CTA
   background-color: #f56f59;
   color: #fafafa;
   margin: 32px auto 0 auto;
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 700;
+  border: 2px solid #f56f59;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: background-color .25s ease, border-color .25s ease, color .25s ease;
+  -moz-transition: background-color .25s ease, border-color .25s ease, color .25s ease;
+  -ms-transition: background-color .25s ease, border-color .25s ease, color .25s ease;
+  transition: background-color .25s ease, border-color .25s ease, color .25s ease;
+}
+
+/* line 80, ../sass/_general.scss */
+.cta:hover {
+  background-color: #fafafa;
+  border-color: #f56f59;
+  color: #f56f59;
+}
+
+/* line 86, ../sass/_general.scss */
+a.link {
+  color: #DF887A;
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-transition: color .25s ease;
+  -moz-transition: color .25s ease;
+  -ms-transition: color .25s ease;
+  transition: color .25s ease;
+}
+
+/* line 93, ../sass/_general.scss */
+a.link:hover {
+  color: #f56f59;
+  text-decoration: underline;
+}
+
+/****************************************************************
+FOOTER
+****************************************************************/
+/* line 104, ../sass/_general.scss */
+footer {
+  padding: 16px 0;
+  text-align: center;
+  background-color: #6e7982;
+}
+
+/* line 110, ../sass/_general.scss */
+footer h3 {
+  margin-bottom: 16px;
+  color: #fafafa;
+}
+
+/****************************************************************
+REVIEWS
+****************************************************************/
+/* line 119, ../sass/_general.scss */
+article {
+  text-align: left;
+}
+
+/* line 123, ../sass/_general.scss */
+.review h3 {
+  text-align: left;
+  margin-top: 16px;
+  font-style: italic;
+}
+
+/* line 129, ../sass/_general.scss */
+.stars, .date {
+  margin-bottom: 16px;
+}
+
+/* line 133, ../sass/_general.scss */
+.stars {
+  display: inline-block;
+}
+
+/* line 137, ../sass/_general.scss */
+.date {
+  display: inline-block;
+}
+
+/* line 141, ../sass/_general.scss */
+.icon-star-full {
+  color: #f8c48b;
+  margin-right: 5px;
 }

@@ -14,7 +14,7 @@
  }
 
  header {
-  margin-top: $quater-buffer;
+  margin-top: $quarter-buffer;
   margin-bottom: $buffer;
  }
 
@@ -56,7 +56,7 @@ section {
 }
 
 /****************************************************************
-BUTTONS& CTA
+BUTTONS, LINKS, CTAs
 ****************************************************************/
 
 .cta {
@@ -70,7 +70,76 @@ BUTTONS& CTA
   background-color: $coral;
   color: $white;
   margin: $half-buffer auto 0 auto;
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 700;
+  border: 2px solid $coral;
+  @include border-radius(3px);
+  @include button-hover();
+}
+
+.cta:hover {
+  background-color: $white;
+  border-color    : $coral;
+  color           : $coral;
+}
+
+a.link {
+  color: $light-coral;
+  font-weight: 700;
+  text-decoration: none;
+  @include link-hover();
+}
+
+a.link:hover {
+  color: $coral;
+  text-decoration: underline;
+}
+
+
+
+/****************************************************************
+FOOTER
+****************************************************************/
+
+footer {
+  padding: $quarter-buffer 0;
+  text-align: center;
+  background-color: $grey;
+}
+
+footer h3 {
+  margin-bottom: $quarter-buffer;
+  color: $white;
+}
+
+/****************************************************************
+REVIEWS
+****************************************************************/
+
+article {
+  text-align: left;
+}
+
+.review h3 {
+  text-align: left;
+  margin-top: $quarter-buffer;
+  font-style: italic;
+}
+
+.stars, .date {
+  margin-bottom: $quarter-buffer;
+}
+
+.stars {
+  display: inline-block;
+}
+
+.date {
+  display: inline-block;
+}
+
+.icon-star-full {
+  color: $orange;
+  margin-right: 5px;
 }
 

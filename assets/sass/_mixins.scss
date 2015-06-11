@@ -6,12 +6,7 @@
          border-radius : $radius;
 }
 
-@mixin button-hover($bg-color, $sec-color) {
-  background-color: $bg-color;
-  border-color    : $sec-color;
-  color           : $sec-color;
-  // border          : 
-
+@mixin button-hover() {
   -webkit-transition: background-color .25s ease,
                           border-color .25s ease,
                                  color .25s ease;
@@ -26,3 +21,9 @@
                                  color .25s ease;
 }
 
+@mixin link-hover() {
+  -webkit-transition: color .25s ease;
+     -moz-transition: color .25s ease;
+      -ms-transition: color .25s ease;
+          transition: color .25s ease;
+}

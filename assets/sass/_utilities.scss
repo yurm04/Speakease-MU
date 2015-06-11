@@ -49,6 +49,22 @@ LAYOUT
   max-width: $max-width;
 }
 
-p.text-block {
+.text-block {
   margin: 0 10%;
+}
+
+hr {
+  max-width: 250px;
+  margin: $quarter-buffer auto;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(139, 150, 158, 0), rgba(139, 150, 158, 0.75), rgba(0, 0, 0, 0));
+}
+
+/****************************************************************
+ALIGNMENT
+****************************************************************/
+
+.text-center {
+  text-align: center;
 }

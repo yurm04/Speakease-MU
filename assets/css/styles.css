@@ -1,7 +1,16 @@
 /*********************************************************
  * NORMALIZE
  *********************************************************/
-/* line 6, ../sass/_normalize2.scss */
+/* line 5, ../sass/_normalize2.scss */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+/* line 13, ../sass/_normalize2.scss */
 body, ul, hr, h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
@@ -51,17 +60,46 @@ body, ul, hr, h1, h2, h3, h4, h5, h6, p {
   color: #6e7982;
 }
 
+/****************************************************************
+LAYOUT
+****************************************************************/
+/* line 47, ../sass/_utilities.scss */
+.wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+/* line 52, ../sass/_utilities.scss */
+p.text-block {
+  margin: 0 10%;
+}
+
 /* Mixins */
 /****************************************************************
 TYPOGRAPHY
 ****************************************************************/
 /* line 7, ../sass/_fonts.scss */
-h1 {
-  color: #fafafa;
+h1, h2 {
   text-transform: uppercase;
   text-align: center;
-  font-size: 2.5em;
+}
+
+/* line 12, ../sass/_fonts.scss */
+h1 {
+  color: #fafafa;
+  font-size: 3em;
   margin: 64px 0;
+}
+
+/* line 18, ../sass/_fonts.scss */
+h2 {
+  font-size: 2em;
+  margin-bottom: 32px;
+}
+
+/* line 23, ../sass/_fonts.scss */
+p {
+  line-height: 1.4;
 }
 
 /****************************************************************
@@ -74,7 +112,7 @@ ICON FONTS
   font-weight: normal;
   font-style: normal;
 }
-/* line 30, ../sass/_fonts.scss */
+/* line 42, ../sass/_fonts.scss */
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon';
   speak: none;
@@ -88,22 +126,22 @@ ICON FONTS
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 44, ../sass/_fonts.scss */
+/* line 56, ../sass/_fonts.scss */
 .icon-bubbles4:before {
   content: "\e970";
 }
 
-/* line 48, ../sass/_fonts.scss */
+/* line 60, ../sass/_fonts.scss */
 .icon-user-tie:before {
   content: "\e976";
 }
 
-/* line 52, ../sass/_fonts.scss */
+/* line 64, ../sass/_fonts.scss */
 .icon-airplane:before {
   content: "\e9af";
 }
 
-/* line 56, ../sass/_fonts.scss */
+/* line 68, ../sass/_fonts.scss */
 .icon-star-full:before {
   content: "\e9d9";
 }
@@ -113,21 +151,22 @@ body {
   color: #000;
   background-color: #99cccc;
   font: normal 400 16px Lato, 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
   position: relative;
 }
 
-/* line 10, ../sass/_general.scss */
+/* line 11, ../sass/_general.scss */
 ul {
   list-style: none;
 }
 
-/* line 15, ../sass/_general.scss */
+/* line 16, ../sass/_general.scss */
 header {
   margin-top: 16px;
   margin-bottom: 64px;
 }
 
-/* line 20, ../sass/_general.scss */
+/* line 21, ../sass/_general.scss */
 nav {
   display: inline-block;
   float: right;
@@ -135,27 +174,55 @@ nav {
   top: 41px;
 }
 
-/* line 27, ../sass/_general.scss */
+/* line 28, ../sass/_general.scss */
 nav ul li:last-child {
   margin-right: 0;
 }
 
-/* line 31, ../sass/_general.scss */
+/* line 32, ../sass/_general.scss */
 nav li {
   display: inline;
   margin-right: 64px;
 }
 
-/* line 36, ../sass/_general.scss */
+/* line 37, ../sass/_general.scss */
 nav a {
   text-decoration: none;
   color: #fafafa;
+  font-size: 1.2em;
 }
 
-/* line 41, ../sass/_general.scss */
+/* line 43, ../sass/_general.scss */
 .nav-logo {
   width: 109px;
   height: 98px;
   background: url("images/logo-small.png") no-repeat center;
   display: inline-block;
+}
+
+/****************************************************************
+SECTIONS
+****************************************************************/
+/* line 54, ../sass/_general.scss */
+section {
+  padding: 64px 0;
+}
+
+/****************************************************************
+BUTTONS& CTA
+****************************************************************/
+/* line 62, ../sass/_general.scss */
+.cta {
+  display: inline-block;
+  text-align: center;
+  height: 48px;
+  line-height: 48px;
+  text-decoration: none;
+  font-variant: small-caps;
+  padding: 0 24px;
+  background-color: #f56f59;
+  color: #fafafa;
+  margin: 32px auto 0 auto;
+  font-size: 1.2em;
+  font-weight: 700;
 }

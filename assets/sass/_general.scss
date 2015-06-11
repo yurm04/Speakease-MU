@@ -4,6 +4,7 @@
   color: #000;
   background-color: $blue;
   font: normal 400 16px Lato, 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
   position: relative;
  }
 
@@ -36,6 +37,7 @@ nav li {
 nav a {
   text-decoration: none;
   color: $white;
+  font-size: 1.2em;
 }
 
 .nav-logo {
@@ -45,4 +47,30 @@ nav a {
   display: inline-block;
 }
 
+/****************************************************************
+SECTIONS
+****************************************************************/
+
+section {
+  padding: $buffer 0;
+}
+
+/****************************************************************
+BUTTONS& CTA
+****************************************************************/
+
+.cta {
+  display: inline-block;
+  text-align: center;
+  height: $button;
+  line-height: $button;
+  text-decoration: none;
+  font-variant: small-caps;
+  padding: 0 $half-button;
+  background-color: $coral;
+  color: $white;
+  margin: $half-buffer auto 0 auto;
+  font-size: 1.2em;
+  font-weight: 700;
+}
 

@@ -120,10 +120,24 @@ article {
   text-align: left;
 }
 
+.review {
+  display: inline-block;
+}
+
+.review-wrapper {
+  display: table;
+  padding: 0 10%;
+}
+
 .review h3 {
   text-align: left;
   margin-top: $quarter-buffer;
   font-style: italic;
+}
+
+.review.text-block {
+  max-width: 80%;
+  margin: 0 5%;
 }
 
 .stars, .date {

@@ -1,6 +1,8 @@
 /*********************************************************
  * NORMALIZE
  *********************************************************/
+@import url(http:\/\/fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http:\/\/fonts.googleapis.com/css?family=Josefin+Slab:400,600);
 /* line 5, ../sass/_normalize2.scss */
 html {
   -webkit-font-smoothing: antialiased;
@@ -29,33 +31,39 @@ body, ul, hr, h1, h2, h3, h4, h5, h6, p {
   background-color: #99cccc;
 }
 
-/* line 18, ../sass/_utilities.scss */
+/* line 14, ../sass/_utilities.scss */
+section.bg-pattern {
+  background: url("images/confectionary.png");
+  background-color: #fafafa;
+}
+
+/* line 19, ../sass/_utilities.scss */
 .bg-grey {
   background-color: #6e7982;
   color: #fafafa;
 }
 
-/* line 23, ../sass/_utilities.scss */
+/* line 24, ../sass/_utilities.scss */
 .color-white {
   color: #fafafa;
 }
 
-/* line 27, ../sass/_utilities.scss */
+/* line 28, ../sass/_utilities.scss */
 .color-dark {
   color: #333333;
 }
 
-/* line 31, ../sass/_utilities.scss */
+/* line 32, ../sass/_utilities.scss */
 .color-coral {
   color: #f56f59;
 }
 
-/* line 35, ../sass/_utilities.scss */
+/* line 36, ../sass/_utilities.scss */
 .color-orange {
   color: #f8c48b;
 }
 
-/* line 39, ../sass/_utilities.scss */
+/* line 40, ../sass/_utilities.scss */
 .color-grey {
   color: #6e7982;
 }
@@ -63,18 +71,18 @@ body, ul, hr, h1, h2, h3, h4, h5, h6, p {
 /****************************************************************
 LAYOUT
 ****************************************************************/
-/* line 47, ../sass/_utilities.scss */
+/* line 48, ../sass/_utilities.scss */
 .wrapper {
   margin: 0 auto;
   max-width: 960px;
 }
 
-/* line 52, ../sass/_utilities.scss */
+/* line 53, ../sass/_utilities.scss */
 .text-block {
   margin: 0 10%;
 }
 
-/* line 56, ../sass/_utilities.scss */
+/* line 57, ../sass/_utilities.scss */
 hr {
   max-width: 250px;
   margin: 16px auto;
@@ -83,10 +91,46 @@ hr {
   background-image: linear-gradient(to right, rgba(139, 150, 158, 0), rgba(139, 150, 158, 0.75), transparent);
 }
 
+/* line 65, ../sass/_utilities.scss */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 71, ../sass/_utilities.scss */
+.container .third:last-child {
+  margin-right: 0;
+}
+
+/* line 75, ../sass/_utilities.scss */
+.third {
+  display: inline-block;
+  max-width: 290px;
+  margin-right: 16px;
+  vertical-align: text-top;
+}
+
+/* line 82, ../sass/_utilities.scss */
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: #fafafa;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0 2px 10px rgba(110, 121, 130, 0.1);
+}
+
+/* line 91, ../sass/_utilities.scss */
+.arrow {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 /****************************************************************
 ALIGNMENT
 ****************************************************************/
-/* line 68, ../sass/_utilities.scss */
+/* line 100, ../sass/_utilities.scss */
 .text-center {
   text-align: center;
 }
@@ -95,41 +139,52 @@ ALIGNMENT
 /****************************************************************
 TYPOGRAPHY
 ****************************************************************/
-/* line 7, ../sass/_fonts.scss */
+/* line 8, ../sass/_fonts.scss */
 h1, h2, h3 {
   text-align: center;
 }
 
-/* line 11, ../sass/_fonts.scss */
+/* line 12, ../sass/_fonts.scss */
 h1, h2 {
   text-transform: uppercase;
 }
 
-/* line 15, ../sass/_fonts.scss */
+/* line 16, ../sass/_fonts.scss */
 h1 {
   color: #fafafa;
   font-size: 3em;
   margin: 64px 0 117px 0;
 }
 
-/* line 21, ../sass/_fonts.scss */
+/* line 22, ../sass/_fonts.scss */
 h2 {
   font-size: 2em;
   margin-bottom: 32px;
+  font-family: 'Josefin Slab', Georgia, 'Times New Roman', serif;
 }
 
-/* line 27, ../sass/_fonts.scss */
+/* line 28, ../sass/_fonts.scss */
+h3.desc-head {
+  margin: 16px 0;
+}
+
+/* line 33, ../sass/_fonts.scss */
+h3.sub {
+  margin-bottom: 32px;
+}
+
+/* line 37, ../sass/_fonts.scss */
 p {
   line-height: 1.4;
 }
 
-/* line 31, ../sass/_fonts.scss */
+/* line 41, ../sass/_fonts.scss */
 p.copyright {
   font-size: .8em;
   color: #fafafa;
 }
 
-/* line 36, ../sass/_fonts.scss */
+/* line 46, ../sass/_fonts.scss */
 section p {
   text-align: left;
 }
@@ -139,12 +194,12 @@ ICON FONTS
 ****************************************************************/
 @font-face {
   font-family: 'icomoon';
-  src: url("../../fonts/icomoon.eot?-a4xqdd");
-  src: url("../../fonts/icomoon.eot?#iefix-a4xqdd") format("embedded-opentype"), url("../../fonts/icomoon.woff?-a4xqdd") format("woff"), url("../../fonts/icomoon.ttf?-a4xqdd") format("truetype"), url("../../fonts/icomoon.svg?-a4xqdd#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?vri0ou");
+  src: url("fonts/icomoon.eot?#iefixvri0ou") format("embedded-opentype"), url("fonts/icomoon.ttf?vri0ou") format("truetype"), url("fonts/icomoon.woff?vri0ou") format("woff"), url("fonts/icomoon.svg?vri0ou#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-/* line 55, ../sass/_fonts.scss */
+/* line 65, ../sass/_fonts.scss */
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon';
   speak: none;
@@ -153,31 +208,68 @@ ICON FONTS
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  color: #99cccc;
+  text-shadow: 0 1px 3px rgba(110, 121, 130, 0.2);
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 69, ../sass/_fonts.scss */
+/* line 81, ../sass/_fonts.scss */
 .icon-bubbles4:before {
   content: "\e970";
 }
 
-/* line 73, ../sass/_fonts.scss */
+/* line 84, ../sass/_fonts.scss */
 .icon-user-tie:before {
   content: "\e976";
 }
 
-/* line 77, ../sass/_fonts.scss */
+/* line 87, ../sass/_fonts.scss */
 .icon-airplane:before {
   content: "\e9af";
 }
 
-/* line 81, ../sass/_fonts.scss */
+/* line 90, ../sass/_fonts.scss */
 .icon-star-full:before {
   content: "\e9d9";
 }
 
+/* line 93, ../sass/_fonts.scss */
+.icon-right:before {
+  content: "\ea42";
+}
+
+/* line 96, ../sass/_fonts.scss */
+.icon-left:before {
+  content: "\ea44";
+}
+
+/* line 100, ../sass/_fonts.scss */
+.circle [class^="icon-"], .circle [class*=" icon-"] {
+  line-height: 3em;
+  font-size: 3em;
+}
+
+/* line 105, ../sass/_fonts.scss */
+.icon-left, .icon-right {
+  display: inline-block;
+  color: rgba(146, 150, 154, 0.5);
+  font-size: 3em;
+  text-shadow: none;
+  transition: text-shadow .5s ease, color .5s ease;
+}
+
+/* line 114, ../sass/_fonts.scss */
+.icon-left:hover, .icon-right:hover {
+  text-shadow: 0 1px 3px rgba(110, 121, 130, 0.2);
+  color: #DF887A;
+  cursor: pointer;
+}
+
+/****************************************************************
+ICON FONTS
+****************************************************************/
 /* line 3, ../sass/_general.scss */
 body {
   color: #000;
@@ -317,28 +409,45 @@ article {
 }
 
 /* line 123, ../sass/_general.scss */
+.review {
+  display: inline-block;
+}
+
+/* line 127, ../sass/_general.scss */
+.review-wrapper {
+  display: table;
+  padding: 0 10%;
+}
+
+/* line 132, ../sass/_general.scss */
 .review h3 {
   text-align: left;
   margin-top: 16px;
   font-style: italic;
 }
 
-/* line 129, ../sass/_general.scss */
+/* line 138, ../sass/_general.scss */
+.review.text-block {
+  max-width: 80%;
+  margin: 0 5%;
+}
+
+/* line 143, ../sass/_general.scss */
 .stars, .date {
   margin-bottom: 16px;
 }
 
-/* line 133, ../sass/_general.scss */
+/* line 147, ../sass/_general.scss */
 .stars {
   display: inline-block;
 }
 
-/* line 137, ../sass/_general.scss */
+/* line 151, ../sass/_general.scss */
 .date {
   display: inline-block;
 }
 
-/* line 141, ../sass/_general.scss */
+/* line 155, ../sass/_general.scss */
 .icon-star-full {
   color: #f8c48b;
   margin-right: 5px;

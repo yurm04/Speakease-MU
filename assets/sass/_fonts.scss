@@ -2,7 +2,8 @@
 TYPOGRAPHY
 ****************************************************************/
 
-// @import url(http:\/\/fonts.googleapis.com/css?family=Lato:400,700);			// Google Font
+@import url(http:\/\/fonts.googleapis.com/css?family=Lato:400,700);			// Google Font
+@import url(http:\/\/fonts.googleapis.com/css?family=Josefin+Slab:400,600);
 
 h1, h2, h3 {
 	text-align: center;	
@@ -21,8 +22,17 @@ h1 {
 h2 {
 	font-size: 2em;
 	margin-bottom: $half-buffer;
+	font-family: 'Josefin Slab', Georgia, 'Times New Roman', serif;
 }
 
+h3.desc-head {
+	margin: $quarter-buffer 0;
+}
+
+
+h3.sub {
+	margin-bottom: $half-buffer;
+}
 
 p {
 	line-height: 1.4;
@@ -43,11 +53,11 @@ ICON FONTS
 
 @font-face {
 	font-family: 'icomoon';
-	src:url('../../fonts/icomoon.eot?-a4xqdd');
-	src:url('../../fonts/icomoon.eot?#iefix-a4xqdd') format('embedded-opentype'),
-		url('../../fonts/icomoon.woff?-a4xqdd') format('woff'),
-		url('../../fonts/icomoon.ttf?-a4xqdd') format('truetype'),
-		url('../../fonts/icomoon.svg?-a4xqdd#icomoon') format('svg');
+	src:url('fonts/icomoon.eot?vri0ou');
+	src:url('fonts/icomoon.eot?#iefixvri0ou') format('embedded-opentype'),
+		url('fonts/icomoon.ttf?vri0ou') format('truetype'),
+		url('fonts/icomoon.woff?vri0ou') format('woff'),
+		url('fonts/icomoon.svg?vri0ou#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -60,6 +70,8 @@ ICON FONTS
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
+	color: $blue;					// YE added
+	text-shadow: 0 1px 3px rgba(110, 121, 130, .2);		// YE added
 
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
@@ -69,16 +81,92 @@ ICON FONTS
 .icon-bubbles4:before {
 	content: "\e970";
 }
-
 .icon-user-tie:before {
 	content: "\e976";
 }
-
 .icon-airplane:before {
 	content: "\e9af";
 }
-
 .icon-star-full:before {
 	content: "\e9d9";
 }
+.icon-right:before {
+	content: "\ea42";
+}
+.icon-left:before {
+	content: "\ea44";
+}
+
+.circle [class^="icon-"], .circle [class*=" icon-"]{
+	line-height: 3em;
+	font-size: 3em;
+}
+
+.icon-left, .icon-right {
+	display: inline-block;
+	color: rgba(146, 150, 154, 0.5);
+	font-size: 3em;
+	text-shadow: none;
+	transition: text-shadow .5s ease,
+							color .5s ease;
+}
+
+.icon-left:hover, .icon-right:hover {
+	text-shadow: 0 1px 3px rgba(110, 121, 130, .2);		// YE added
+	color: $light-coral;
+	cursor: pointer;
+}
+
+
+/****************************************************************
+ICON FONTS
+****************************************************************/
+
+// @font-face {
+// 	font-family: 'icomoon';
+// 	src:url('../../fonts/icomoon.eot?-a4xqdd');
+// 	src:url('../../fonts/icomoon.eot?#iefix-a4xqdd') format('embedded-opentype'),
+// 		url('../../fonts/icomoon.woff?-a4xqdd') format('woff'),
+// 		url('../../fonts/icomoon.ttf?-a4xqdd') format('truetype'),
+// 		url('../../fonts/icomoon.svg?-a4xqdd#icomoon') format('svg');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+
+// [class^="icon-"], [class*=" icon-"] {
+// 	font-family: 'icomoon';
+// 	speak: none;
+// 	font-style: normal;
+// 	font-weight: normal;
+// 	font-variant: normal;
+// 	text-transform: none;
+// 	line-height: 1;
+// 	color: $blue;
+// 	text-shadow: 0 1px 3px rgba(110, 121, 130, .2);
+
+// 	/* Better Font Rendering =========== */
+// 	-webkit-font-smoothing: antialiased;
+// 	-moz-osx-font-smoothing: grayscale;
+// }
+
+// .circle [class^="icon-"], .circle [class*=" icon-"]{
+// 	line-height: 3em;
+// 	font-size: 3em;
+// }
+
+// .icon-bubbles4:before {
+// 	content: "\e970";
+// }
+
+// .icon-user-tie:before {
+// 	content: "\e976";
+// }
+
+// .icon-airplane:before {
+// 	content: "\e9af";
+// }
+
+// .icon-star-full:before {
+// 	content: "\e9d9";
+// }
 

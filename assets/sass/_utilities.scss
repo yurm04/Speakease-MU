@@ -11,8 +11,9 @@
   background-color: $blue;
 }
 
-.bg-pattern {
-
+section.bg-pattern {
+  background: url("images/confectionary.png");
+  background-color: #fafafa;
 }
 
 .bg-grey {
@@ -59,6 +60,37 @@ hr {
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, rgba(139, 150, 158, 0), rgba(139, 150, 158, 0.75), rgba(0, 0, 0, 0));
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container .third:last-child {
+  margin-right: 0;
+}
+
+.third {
+  display: inline-block;
+  max-width: 290px;
+  margin-right: $quarter-buffer;
+  vertical-align: text-top;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: $white;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0 2px 10px rgba(110, 121, 130, .1);
+}
+
+.arrow {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 /****************************************************************

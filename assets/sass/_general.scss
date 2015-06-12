@@ -13,9 +13,16 @@
   // display: inline-block;
  }
 
+.header-bg {
+  max-height: 355px;
+  padding: $quarter-buffer 0 117px 0;
+}
+
  header {
-  margin-top: $quarter-buffer;
-  margin-bottom: $buffer;
+  // margin-top: $quarter-buffer;
+  // margin-bottom: 117px;
+  background-color: $blue;
+  background: url("images/confectionary.png");
  }
 
 nav {
@@ -32,7 +39,18 @@ nav ul li:last-child {
 nav li {
   display: inline;
   margin-right: $buffer;
+  color: $white;
 }
+
+nav li a {
+  @include link-hover();
+}
+
+nav li a:hover {
+  color: $coral;
+  font-weight: 700;
+}
+
 
 nav a {
   text-decoration: none;

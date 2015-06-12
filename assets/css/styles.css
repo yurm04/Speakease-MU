@@ -153,7 +153,7 @@ h1, h2 {
 h1 {
   color: #fafafa;
   font-size: 3em;
-  margin: 64px 0 117px 0;
+  margin-top: 64px;
 }
 
 /* line 22, ../sass/_fonts.scss */
@@ -285,12 +285,18 @@ ul {
 }
 
 /* line 16, ../sass/_general.scss */
-header {
-  margin-top: 16px;
-  margin-bottom: 64px;
+.header-bg {
+  max-height: 355px;
+  padding: 16px 0 117px 0;
 }
 
 /* line 21, ../sass/_general.scss */
+header {
+  background-color: #99cccc;
+  background: url("images/confectionary.png");
+}
+
+/* line 28, ../sass/_general.scss */
 nav {
   display: inline-block;
   float: right;
@@ -298,25 +304,40 @@ nav {
   top: 41px;
 }
 
-/* line 28, ../sass/_general.scss */
+/* line 35, ../sass/_general.scss */
 nav ul li:last-child {
   margin-right: 0;
 }
 
-/* line 32, ../sass/_general.scss */
+/* line 39, ../sass/_general.scss */
 nav li {
   display: inline;
   margin-right: 64px;
+  color: #fafafa;
 }
 
-/* line 37, ../sass/_general.scss */
+/* line 45, ../sass/_general.scss */
+nav li a {
+  -webkit-transition: color .25s ease;
+  -moz-transition: color .25s ease;
+  -ms-transition: color .25s ease;
+  transition: color .25s ease;
+}
+
+/* line 49, ../sass/_general.scss */
+nav li a:hover {
+  color: #f56f59;
+  font-weight: 700;
+}
+
+/* line 55, ../sass/_general.scss */
 nav a {
   text-decoration: none;
   color: #fafafa;
   font-size: 1.2em;
 }
 
-/* line 43, ../sass/_general.scss */
+/* line 61, ../sass/_general.scss */
 .nav-logo {
   width: 109px;
   height: 98px;
@@ -327,7 +348,7 @@ nav a {
 /****************************************************************
 SECTIONS
 ****************************************************************/
-/* line 54, ../sass/_general.scss */
+/* line 72, ../sass/_general.scss */
 section {
   padding: 64px 0;
 }
@@ -335,7 +356,7 @@ section {
 /****************************************************************
 BUTTONS, LINKS, CTAs
 ****************************************************************/
-/* line 62, ../sass/_general.scss */
+/* line 80, ../sass/_general.scss */
 .cta {
   display: inline-block;
   text-align: center;
@@ -360,14 +381,14 @@ BUTTONS, LINKS, CTAs
   transition: background-color .25s ease, border-color .25s ease, color .25s ease;
 }
 
-/* line 80, ../sass/_general.scss */
+/* line 98, ../sass/_general.scss */
 .cta:hover {
   background-color: #fafafa;
   border-color: #f56f59;
   color: #f56f59;
 }
 
-/* line 86, ../sass/_general.scss */
+/* line 104, ../sass/_general.scss */
 a.link {
   color: #DF887A;
   font-weight: 700;
@@ -378,7 +399,7 @@ a.link {
   transition: color .25s ease;
 }
 
-/* line 93, ../sass/_general.scss */
+/* line 111, ../sass/_general.scss */
 a.link:hover {
   color: #f56f59;
   text-decoration: underline;
@@ -387,14 +408,14 @@ a.link:hover {
 /****************************************************************
 FOOTER
 ****************************************************************/
-/* line 104, ../sass/_general.scss */
+/* line 122, ../sass/_general.scss */
 footer {
   padding: 16px 0;
   text-align: center;
   background-color: #6e7982;
 }
 
-/* line 110, ../sass/_general.scss */
+/* line 128, ../sass/_general.scss */
 footer h3 {
   margin-bottom: 16px;
   color: #fafafa;
@@ -403,51 +424,51 @@ footer h3 {
 /****************************************************************
 REVIEWS
 ****************************************************************/
-/* line 119, ../sass/_general.scss */
+/* line 137, ../sass/_general.scss */
 article {
   text-align: left;
 }
 
-/* line 123, ../sass/_general.scss */
+/* line 141, ../sass/_general.scss */
 .review {
   display: inline-block;
 }
 
-/* line 127, ../sass/_general.scss */
+/* line 145, ../sass/_general.scss */
 .review-wrapper {
   display: table;
   padding: 0 10%;
 }
 
-/* line 132, ../sass/_general.scss */
+/* line 150, ../sass/_general.scss */
 .review h3 {
   text-align: left;
   margin-top: 16px;
   font-style: italic;
 }
 
-/* line 138, ../sass/_general.scss */
+/* line 156, ../sass/_general.scss */
 .review.text-block {
   max-width: 80%;
   margin: 0 5%;
 }
 
-/* line 143, ../sass/_general.scss */
+/* line 161, ../sass/_general.scss */
 .stars, .date {
   margin-bottom: 16px;
 }
 
-/* line 147, ../sass/_general.scss */
+/* line 165, ../sass/_general.scss */
 .stars {
   display: inline-block;
 }
 
-/* line 151, ../sass/_general.scss */
+/* line 169, ../sass/_general.scss */
 .date {
   display: inline-block;
 }
 
-/* line 155, ../sass/_general.scss */
+/* line 173, ../sass/_general.scss */
 .icon-star-full {
   color: #f8c48b;
   margin-right: 5px;

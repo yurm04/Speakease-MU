@@ -1,7 +1,7 @@
 
 
  body {
-  color: #000;
+  color: $dark-text;
   background-color: $blue;
   font: normal 400 16px Lato, 'Helvetica Nueue', Helvetica, Arial, sans-serif;
   letter-spacing: 1px;
@@ -16,13 +16,14 @@
 .header-bg {
   max-height: 355px;
   padding: $quarter-buffer 0 117px 0;
+  background: $pattern-blue url(../../images/confectionary.png) repeat right top;
 }
 
  header {
   // margin-top: $quarter-buffer;
   // margin-bottom: 117px;
-  background-color: $blue;
-  background: url("images/confectionary.png");
+  // background-color: $blue;
+  // background: url("images/confectionary.png");
  }
 
 nav {
@@ -90,6 +91,7 @@ BUTTONS, LINKS, CTAs
   margin: $half-buffer auto 0 auto;
   font-size: 1.3em;
   font-weight: 700;
+  box-shadow: 0 1px 3px $o-grey;
   border: 2px solid $coral;
   @include border-radius(3px);
   @include button-hover();
@@ -175,3 +177,142 @@ article {
   margin-right: 5px;
 }
 
+.instructor .circle {
+  width: 350px;
+  height: 350px;
+  box-shadow: 0 2px 10px rgba(110, 121, 130, .8);
+  background: $white url(../../images/instructor.jpg) no-repeat top right;
+}
+
+.instructor {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.showcase {
+  display: inline-block;
+  text-align: center;
+}
+
+.showcase h3 {
+  margin-top: $quarter-buffer;
+  margin-bottom: .2em;
+}
+
+.showcase li {
+  display: inline;
+  font-family: 'Josefin Slab', Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.showcase li:after {
+  content: ' | ';
+  padding: 0 8px;
+}
+
+.showcase li:last-child {
+  margin-right: none;
+}
+
+.showcase li:last-child:after {
+  content: none;
+  padding: none;
+}
+
+.instructor .text-block {
+  width: 50%;
+  display: inline-block;
+  margin-right: 0;
+  vertical-align: top;
+  margin-top: 10%;
+}
+
+/****************************************************************
+CLASSES PAGE
+****************************************************************/
+
+.box {
+  width: 400px;
+  height: 555px;
+  margin-right: $half-buffer;
+  background-color: $light-grey;
+  display: inline-block;
+  padding-top: $half-buffer;
+}
+
+.box:last-child {
+  margin-right: 0;
+}
+
+.box h3 {
+  margin-bottom: $half-buffer;
+}
+
+.box .circle {
+  width: 125px;
+  height: 125px;
+  margin-bottom: $half-buffer;
+}
+
+.box .circle .icon-user, .box .circle .icon-computer {
+  font-size: 3em;
+  line-height: 16px;
+  line-height: 125px;
+}
+
+/****************************************************************
+RATES PAGE
+****************************************************************/
+
+.compare {
+  width: 100%;
+  height: 250px;
+  background-color: $light-grey;
+  margin-bottom: $half-buffer;
+  display: table;
+}
+
+.combine {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.compare h3 {
+  display: inline-block;
+}
+
+.compare .circle {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 100px;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+/****************************************************************
+TABLE
+****************************************************************/
+
+table {
+  margin-top: $half-buffer;
+  color: $dark-text;
+}
+table, td {
+  border: 1px $dark-text solid;
+  border-collapse: collapse;
+  border-right: none;
+  border-left: none;
+  width: 100%;
+}
+
+td {
+  padding: 1em;
+}

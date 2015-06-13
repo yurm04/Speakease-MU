@@ -23,7 +23,7 @@ body, ul, hr, h1, h2, h3, h4, h5, h6, p {
 /* line 5, ../sass/_utilities.scss */
 .bg-white {
   background-color: #fafafa;
-  color: #333333;
+  color: #545454;
 }
 
 /* line 10, ../sass/_utilities.scss */
@@ -50,7 +50,7 @@ section.bg-pattern {
 
 /* line 28, ../sass/_utilities.scss */
 .color-dark {
-  color: #333333;
+  color: #545454;
 }
 
 /* line 32, ../sass/_utilities.scss */
@@ -84,26 +84,29 @@ LAYOUT
 
 /* line 57, ../sass/_utilities.scss */
 hr {
-  max-width: 250px;
   margin: 16px auto;
+}
+
+/* line 62, ../sass/_utilities.scss */
+footer hr {
+  max-width: 250px;
   border: 0;
-  height: 1px;
   background-image: linear-gradient(to right, rgba(139, 150, 158, 0), rgba(139, 150, 158, 0.75), transparent);
 }
 
-/* line 65, ../sass/_utilities.scss */
+/* line 68, ../sass/_utilities.scss */
 .container {
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 71, ../sass/_utilities.scss */
+/* line 74, ../sass/_utilities.scss */
 .container .third:last-child {
   margin-right: 0;
 }
 
-/* line 75, ../sass/_utilities.scss */
+/* line 82, ../sass/_utilities.scss */
 .third {
   display: inline-block;
   max-width: 290px;
@@ -111,17 +114,21 @@ hr {
   vertical-align: text-top;
 }
 
-/* line 82, ../sass/_utilities.scss */
+/* line 89, ../sass/_utilities.scss */
 .circle {
-  width: 150px;
-  height: 150px;
   background-color: #fafafa;
   border-radius: 50%;
   margin: 0 auto;
   box-shadow: 0 2px 10px rgba(110, 121, 130, 0.1);
 }
 
-/* line 91, ../sass/_utilities.scss */
+/* line 96, ../sass/_utilities.scss */
+.third .circle {
+  width: 150px;
+  height: 150px;
+}
+
+/* line 101, ../sass/_utilities.scss */
 .arrow {
   display: table-cell;
   vertical-align: middle;
@@ -130,7 +137,7 @@ hr {
 /****************************************************************
 ALIGNMENT
 ****************************************************************/
-/* line 100, ../sass/_utilities.scss */
+/* line 110, ../sass/_utilities.scss */
 .text-center {
   text-align: center;
 }
@@ -194,8 +201,8 @@ ICON FONTS
 ****************************************************************/
 @font-face {
   font-family: 'icomoon';
-  src: url("fonts/icomoon.eot?vri0ou");
-  src: url("fonts/icomoon.eot?#iefixvri0ou") format("embedded-opentype"), url("fonts/icomoon.ttf?vri0ou") format("truetype"), url("fonts/icomoon.woff?vri0ou") format("woff"), url("fonts/icomoon.svg?vri0ou#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?dt5704");
+  src: url("fonts/icomoon.eot?#iefixdt5704") format("embedded-opentype"), url("fonts/icomoon.ttf?dt5704") format("truetype"), url("fonts/icomoon.woff?dt5704") format("woff"), url("fonts/icomoon.svg?dt5704#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -216,42 +223,57 @@ ICON FONTS
 }
 
 /* line 81, ../sass/_fonts.scss */
+.icon-computer:before {
+  content: "\e956";
+}
+
+/* line 84, ../sass/_fonts.scss */
 .icon-bubbles4:before {
   content: "\e970";
 }
 
-/* line 84, ../sass/_fonts.scss */
+/* line 87, ../sass/_fonts.scss */
+.icon-user:before {
+  content: "\e971";
+}
+
+/* line 90, ../sass/_fonts.scss */
+.icon-users:before {
+  content: "\e972";
+}
+
+/* line 93, ../sass/_fonts.scss */
 .icon-user-tie:before {
   content: "\e976";
 }
 
-/* line 87, ../sass/_fonts.scss */
+/* line 96, ../sass/_fonts.scss */
 .icon-airplane:before {
   content: "\e9af";
 }
 
-/* line 90, ../sass/_fonts.scss */
+/* line 99, ../sass/_fonts.scss */
 .icon-star-full:before {
   content: "\e9d9";
 }
 
-/* line 93, ../sass/_fonts.scss */
+/* line 102, ../sass/_fonts.scss */
 .icon-right:before {
   content: "\ea42";
 }
 
-/* line 96, ../sass/_fonts.scss */
+/* line 105, ../sass/_fonts.scss */
 .icon-left:before {
   content: "\ea44";
 }
 
-/* line 100, ../sass/_fonts.scss */
+/* line 109, ../sass/_fonts.scss */
 .circle [class^="icon-"], .circle [class*=" icon-"] {
   line-height: 3em;
   font-size: 3em;
 }
 
-/* line 105, ../sass/_fonts.scss */
+/* line 114, ../sass/_fonts.scss */
 .icon-left, .icon-right {
   display: inline-block;
   color: rgba(146, 150, 154, 0.5);
@@ -260,7 +282,7 @@ ICON FONTS
   transition: text-shadow .5s ease, color .5s ease;
 }
 
-/* line 114, ../sass/_fonts.scss */
+/* line 123, ../sass/_fonts.scss */
 .icon-left:hover, .icon-right:hover {
   text-shadow: 0 1px 3px rgba(110, 121, 130, 0.2);
   color: #DF887A;
@@ -270,9 +292,77 @@ ICON FONTS
 /****************************************************************
 ICON FONTS
 ****************************************************************/
+/*
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?vri0ou');
+	src:url('fonts/icomoon.eot?#iefixvri0ou') format('embedded-opentype'),
+		url('fonts/icomoon.ttf?vri0ou') format('truetype'),
+		url('fonts/icomoon.woff?vri0ou') format('woff'),
+		url('fonts/icomoon.svg?vri0ou#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	color: $blue;					// YE added
+	text-shadow: 0 1px 3px rgba(110, 121, 130, .2);		// YE added
+
+	
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bubbles4:before {
+	content: "\e970";
+}
+.icon-user-tie:before {
+	content: "\e976";
+}
+.icon-airplane:before {
+	content: "\e9af";
+}
+.icon-star-full:before {
+	content: "\e9d9";
+}
+.icon-right:before {
+	content: "\ea42";
+}
+.icon-left:before {
+	content: "\ea44";
+}
+
+.circle [class^="icon-"], .circle [class*=" icon-"]{
+	line-height: 3em;
+	font-size: 3em;
+}
+
+.icon-left, .icon-right {
+	display: inline-block;
+	color: rgba(146, 150, 154, 0.5);
+	font-size: 3em;
+	text-shadow: none;
+	transition: text-shadow .5s ease,
+							color .5s ease;
+}
+
+.icon-left:hover, .icon-right:hover {
+	text-shadow: 0 1px 3px rgba(110, 121, 130, .2);		// YE added
+	color: $light-coral;
+	cursor: pointer;
+}
+
+*/
 /* line 3, ../sass/_general.scss */
 body {
-  color: #000;
+  color: #545454;
   background-color: #99cccc;
   font: normal 400 16px Lato, 'Helvetica Nueue', Helvetica, Arial, sans-serif;
   letter-spacing: 1px;
@@ -288,15 +378,10 @@ ul {
 .header-bg {
   max-height: 355px;
   padding: 16px 0 117px 0;
+  background: #44B1B1 url(../../images/confectionary.png) repeat right top;
 }
 
-/* line 21, ../sass/_general.scss */
-header {
-  background-color: #99cccc;
-  background: url("images/confectionary.png");
-}
-
-/* line 28, ../sass/_general.scss */
+/* line 29, ../sass/_general.scss */
 nav {
   display: inline-block;
   float: right;
@@ -304,19 +389,19 @@ nav {
   top: 41px;
 }
 
-/* line 35, ../sass/_general.scss */
+/* line 36, ../sass/_general.scss */
 nav ul li:last-child {
   margin-right: 0;
 }
 
-/* line 39, ../sass/_general.scss */
+/* line 40, ../sass/_general.scss */
 nav li {
   display: inline;
   margin-right: 64px;
   color: #fafafa;
 }
 
-/* line 45, ../sass/_general.scss */
+/* line 46, ../sass/_general.scss */
 nav li a {
   -webkit-transition: color .25s ease;
   -moz-transition: color .25s ease;
@@ -324,20 +409,20 @@ nav li a {
   transition: color .25s ease;
 }
 
-/* line 49, ../sass/_general.scss */
+/* line 50, ../sass/_general.scss */
 nav li a:hover {
   color: #f56f59;
   font-weight: 700;
 }
 
-/* line 55, ../sass/_general.scss */
+/* line 56, ../sass/_general.scss */
 nav a {
   text-decoration: none;
   color: #fafafa;
   font-size: 1.2em;
 }
 
-/* line 61, ../sass/_general.scss */
+/* line 62, ../sass/_general.scss */
 .nav-logo {
   width: 109px;
   height: 98px;
@@ -348,7 +433,7 @@ nav a {
 /****************************************************************
 SECTIONS
 ****************************************************************/
-/* line 72, ../sass/_general.scss */
+/* line 73, ../sass/_general.scss */
 section {
   padding: 64px 0;
 }
@@ -356,7 +441,7 @@ section {
 /****************************************************************
 BUTTONS, LINKS, CTAs
 ****************************************************************/
-/* line 80, ../sass/_general.scss */
+/* line 81, ../sass/_general.scss */
 .cta {
   display: inline-block;
   text-align: center;
@@ -370,6 +455,7 @@ BUTTONS, LINKS, CTAs
   margin: 32px auto 0 auto;
   font-size: 1.3em;
   font-weight: 700;
+  box-shadow: 0 1px 3px rgba(110, 121, 130, 0.7);
   border: 2px solid #f56f59;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -381,14 +467,14 @@ BUTTONS, LINKS, CTAs
   transition: background-color .25s ease, border-color .25s ease, color .25s ease;
 }
 
-/* line 98, ../sass/_general.scss */
+/* line 100, ../sass/_general.scss */
 .cta:hover {
   background-color: #fafafa;
   border-color: #f56f59;
   color: #f56f59;
 }
 
-/* line 104, ../sass/_general.scss */
+/* line 106, ../sass/_general.scss */
 a.link {
   color: #DF887A;
   font-weight: 700;
@@ -399,7 +485,7 @@ a.link {
   transition: color .25s ease;
 }
 
-/* line 111, ../sass/_general.scss */
+/* line 113, ../sass/_general.scss */
 a.link:hover {
   color: #f56f59;
   text-decoration: underline;
@@ -408,14 +494,14 @@ a.link:hover {
 /****************************************************************
 FOOTER
 ****************************************************************/
-/* line 122, ../sass/_general.scss */
+/* line 124, ../sass/_general.scss */
 footer {
   padding: 16px 0;
   text-align: center;
   background-color: #6e7982;
 }
 
-/* line 128, ../sass/_general.scss */
+/* line 130, ../sass/_general.scss */
 footer h3 {
   margin-bottom: 16px;
   color: #fafafa;
@@ -424,52 +510,205 @@ footer h3 {
 /****************************************************************
 REVIEWS
 ****************************************************************/
-/* line 137, ../sass/_general.scss */
+/* line 139, ../sass/_general.scss */
 article {
   text-align: left;
 }
 
-/* line 141, ../sass/_general.scss */
+/* line 143, ../sass/_general.scss */
 .review {
   display: inline-block;
 }
 
-/* line 145, ../sass/_general.scss */
+/* line 147, ../sass/_general.scss */
 .review-wrapper {
   display: table;
   padding: 0 10%;
 }
 
-/* line 150, ../sass/_general.scss */
+/* line 152, ../sass/_general.scss */
 .review h3 {
   text-align: left;
   margin-top: 16px;
   font-style: italic;
 }
 
-/* line 156, ../sass/_general.scss */
+/* line 158, ../sass/_general.scss */
 .review.text-block {
   max-width: 80%;
   margin: 0 5%;
 }
 
-/* line 161, ../sass/_general.scss */
+/* line 163, ../sass/_general.scss */
 .stars, .date {
   margin-bottom: 16px;
 }
 
-/* line 165, ../sass/_general.scss */
+/* line 167, ../sass/_general.scss */
 .stars {
   display: inline-block;
 }
 
-/* line 169, ../sass/_general.scss */
+/* line 171, ../sass/_general.scss */
 .date {
   display: inline-block;
 }
 
-/* line 173, ../sass/_general.scss */
+/* line 175, ../sass/_general.scss */
 .icon-star-full {
   color: #f8c48b;
   margin-right: 5px;
+}
+
+/* line 180, ../sass/_general.scss */
+.instructor .circle {
+  width: 350px;
+  height: 350px;
+  box-shadow: 0 2px 10px rgba(110, 121, 130, 0.8);
+  background: #fafafa url(../../images/instructor.jpg) no-repeat top right;
+}
+
+/* line 187, ../sass/_general.scss */
+.instructor {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 192, ../sass/_general.scss */
+.showcase {
+  display: inline-block;
+  text-align: center;
+}
+
+/* line 197, ../sass/_general.scss */
+.showcase h3 {
+  margin-top: 16px;
+  margin-bottom: .2em;
+}
+
+/* line 202, ../sass/_general.scss */
+.showcase li {
+  display: inline;
+  font-family: 'Josefin Slab', Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* line 209, ../sass/_general.scss */
+.showcase li:after {
+  content: ' | ';
+  padding: 0 8px;
+}
+
+/* line 214, ../sass/_general.scss */
+.showcase li:last-child {
+  margin-right: none;
+}
+
+/* line 218, ../sass/_general.scss */
+.showcase li:last-child:after {
+  content: none;
+  padding: none;
+}
+
+/* line 223, ../sass/_general.scss */
+.instructor .text-block {
+  width: 50%;
+  display: inline-block;
+  margin-right: 0;
+  vertical-align: top;
+  margin-top: 10%;
+}
+
+/****************************************************************
+CLASSES PAGE
+****************************************************************/
+/* line 235, ../sass/_general.scss */
+.box {
+  width: 400px;
+  height: 555px;
+  margin-right: 32px;
+  background-color: #F0F0F0;
+  display: inline-block;
+  padding-top: 32px;
+}
+
+/* line 244, ../sass/_general.scss */
+.box:last-child {
+  margin-right: 0;
+}
+
+/* line 248, ../sass/_general.scss */
+.box h3 {
+  margin-bottom: 32px;
+}
+
+/* line 252, ../sass/_general.scss */
+.box .circle {
+  width: 125px;
+  height: 125px;
+  margin-bottom: 32px;
+}
+
+/* line 258, ../sass/_general.scss */
+.box .circle .icon-user, .box .circle .icon-computer {
+  font-size: 3em;
+  line-height: 16px;
+  line-height: 125px;
+}
+
+/****************************************************************
+RATES PAGE
+****************************************************************/
+/* line 268, ../sass/_general.scss */
+.compare {
+  width: 100%;
+  height: 250px;
+  background-color: #F0F0F0;
+  margin-bottom: 32px;
+  display: table;
+}
+
+/* line 276, ../sass/_general.scss */
+.combine {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 281, ../sass/_general.scss */
+.compare h3 {
+  display: inline-block;
+}
+
+/* line 285, ../sass/_general.scss */
+.compare .circle {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 100px;
+  display: inline-block;
+}
+
+/****************************************************************
+TABLE
+****************************************************************/
+/* line 304, ../sass/_general.scss */
+table {
+  margin-top: 32px;
+  color: #545454;
+}
+
+/* line 308, ../sass/_general.scss */
+table, td {
+  border: 1px #545454 solid;
+  border-collapse: collapse;
+  border-right: none;
+  border-left: none;
+  width: 100%;
+}
+
+/* line 316, ../sass/_general.scss */
+td {
+  padding: 1em;
 }

@@ -55,10 +55,13 @@ LAYOUT
 }
 
 hr {
-  max-width: 250px;
   margin: $quarter-buffer auto;
+  // height: 1px;
+}
+
+footer hr {
+  max-width: 250px;
   border: 0;
-  height: 1px;
   background-image: linear-gradient(to right, rgba(139, 150, 158, 0), rgba(139, 150, 158, 0.75), rgba(0, 0, 0, 0));
 }
 
@@ -72,6 +75,10 @@ hr {
   margin-right: 0;
 }
 
+.combine {
+  
+}
+
 .third {
   display: inline-block;
   max-width: 290px;
@@ -80,12 +87,15 @@ hr {
 }
 
 .circle {
-  width: 150px;
-  height: 150px;
   background-color: $white;
   border-radius: 50%;
   margin: 0 auto;
   box-shadow: 0 2px 10px rgba(110, 121, 130, .1);
+}
+
+.third .circle {
+  width: 150px;
+  height: 150px;
 }
 
 .arrow {

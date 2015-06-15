@@ -49,7 +49,7 @@ nav li a {
 
 nav li a:hover {
   color: $coral;
-  font-weight: 700;
+  // font-weight: 700;
 }
 
 
@@ -225,7 +225,7 @@ article {
   display: inline-block;
   margin-right: 0;
   vertical-align: top;
-  margin-top: 10%;
+  margin: 10% 0 0 5%;
 }
 
 /****************************************************************
@@ -261,25 +261,76 @@ CLASSES PAGE
   line-height: 125px;
 }
 
+#combo {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  margin-top: $half-buffer;
+  padding-bottom: $half-buffer;
+}
+
+#combo .wrap{
+  display: block;
+  margin: 0 auto;
+}
+
+#combo .circle {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  margin-bottom: $half-buffer;
+}
+
+#combo .circle .icon-user, #combo .circle .icon-computer {
+  line-height: 100px;
+  font-size:  2.5em;
+}
+
+.plus {
+  margin: 0 $quarter-buffer;
+  font-size: 2em;
+}
+
 /****************************************************************
 RATES PAGE
 ****************************************************************/
 
 .compare {
-  width: 100%;
+  width: 520px;
   height: 250px;
   background-color: $light-grey;
-  margin-bottom: $half-buffer;
+  margin: 0 auto $half-buffer auto;
   display: table;
+  text-align: center;
 }
 
 .combine {
   display: table-cell;
   vertical-align: middle;
+  text-align: left;
+  padding: 0 $half-buffer;
+  margin: 0 auto;
 }
 
 .compare h3 {
   display: inline-block;
+  margin-right: $buffer;
+}
+
+.title {
+  display: inline-block;
+  margin-right: $buffer;
+}
+
+.title:last-child {
+  margin-right: 0
+}
+
+.title h3 {
+  font-family: 'Josefin Slab', Georgia, 'Times New Roman', serif;
+  display: block;
+  margin-right: 0;  
+  margin-bottom: $quarter-buffer;
 }
 
 .compare .circle {
@@ -291,11 +342,9 @@ RATES PAGE
   display: inline-block;
 }
 
-
-
-
-
-
+#extra-margin {
+  margin-right: 90px;
+}
 
 /****************************************************************
 TABLE
@@ -315,4 +364,33 @@ table, td {
 
 td {
   padding: 1em;
+}
+
+/****************************************************************
+FORM
+****************************************************************/
+
+form {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form {
+  text-align: left;
+  width: 500px;
+  margin: 0 auto;
+  padding: $half-buffer;
+  background-color: $light-grey;
+}
+
+.form > div {
+  margin-bottom: $quarter-buffer;
+}
+
+input {
+  width: 100%;
+}
+
+.message {
+  display: block
 }

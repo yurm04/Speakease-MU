@@ -1,4 +1,6 @@
-
+/****************************************************************
+GENERAL/NORMALIZE
+****************************************************************/
 
  body {
   color: $dark-text;
@@ -10,21 +12,17 @@
 
  ul {
   list-style: none;
-  // display: inline-block;
  }
+
+/****************************************************************
+NAVIGATION AND HEADER
+****************************************************************/
 
 .header-bg {
   max-height: 355px;
   padding: $quarter-buffer 0 117px 0;
   background: $pattern-blue url(../../images/confectionary.png) repeat right top;
 }
-
- header {
-  // margin-top: $quarter-buffer;
-  // margin-bottom: 117px;
-  // background-color: $blue;
-  // background: url("images/confectionary.png");
- }
 
 nav {
   display: inline-block;
@@ -188,6 +186,10 @@ article {
   box-shadow: 0 2px 10px rgba(110, 121, 130, .8);
   background: $white url(../../images/instructor.jpg) no-repeat top right;
 }
+
+/****************************************************************
+INSTRUCTOR
+****************************************************************/
 
 .instructor {
   margin: 0 auto;
@@ -425,6 +427,7 @@ input:focus, textarea:focus {
 
 textarea {
   resize: none;
+  font-family: Lato, 'Helvetica Nueue', Helvetica, sans-serif;
 }
 
 .message {

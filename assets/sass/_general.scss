@@ -15,56 +15,6 @@ GENERAL/NORMALIZE
  }
 
 /****************************************************************
-NAVIGATION AND HEADER
-****************************************************************/
-
-.header-bg {
-  max-height: 355px;
-  padding: $quarter-buffer 0 117px 0;
-  background: $pattern-blue url(../../images/confectionary.png) repeat right top;
-}
-
-nav {
-  display: inline-block;
-  float: right;
-  position: relative;
-  top: 41px;
-}
-
-nav ul li:last-child {
-  margin-right: 0;
-}
-
-nav li {
-  display: inline;
-  margin-right: $buffer;
-  color: $white;
-}
-
-nav li a {
-  @include link-hover();
-}
-
-nav li a:hover {
-  color: $coral;
-  // font-weight: 700;
-}
-
-
-nav a {
-  text-decoration: none;
-  color: $white;
-  font-size: 1.2em;
-}
-
-.nav-logo {
-  width: 109px;
-  height: 98px;
-  background: url('images/logo-small.png') no-repeat center;
-  display: inline-block;
-}
-
-/****************************************************************
 SECTIONS
 ****************************************************************/
 
@@ -144,6 +94,16 @@ article {
 }
 
 .review {
+  display: none;
+  
+  -webkit-transition: display .3s ease;
+  -moz-transition: display .3s ease;
+  -ms-transition: display .3s ease;
+  -o-transition: display .3s ease;
+  transition: display .3s ease;
+}
+
+.review.active {
   display: inline-block;
 }
 

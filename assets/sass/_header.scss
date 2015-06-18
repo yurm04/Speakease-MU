@@ -1,0 +1,207 @@
+/****************************************************************
+NAVIGATION AND HEADER
+****************************************************************/
+
+.header-bg {
+  max-height: 355px;
+  padding: 100px 0 117px 0;
+  background: $pattern-blue url(../../images/confectionary.png) repeat right top;
+}
+
+.logo-header {
+  height: 133px;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: $quarter-buffer 0;
+  z-index: 999;
+  -webkit-transition: background-color .3s ease,
+                            box-shadow .3s ease,
+                               padding .3s ease,
+                                height .3s ease;
+     -moz-transition: background-color .3s ease,
+                            box-shadow .3s ease,
+                               padding .3s ease,
+                                height .3s ease;
+      -ms-transition: background-color .3s ease,
+                            box-shadow .3s ease,
+                               padding .3s ease,
+                                height .3s ease;
+       -o-transition: background-color .3s ease,
+                            box-shadow .3s ease,
+                               padding .3s ease,
+                                height .3s ease;
+          transition: background-color .3s ease,
+                            box-shadow .3s ease,
+                               padding .3s ease,
+                                height .3s ease;
+
+}
+
+.logo-header.smaller {
+  height: 75px;
+  background-color: $blue;
+  padding: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+nav {
+  display: inline-block;
+  float: right;
+  position: relative;
+  top: 41px;
+  
+  -webkit-transition: top .3s ease;
+  -moz-transition: top .3s ease;
+  -ms-transition: top .3s ease;
+  -o-transition: top .3s ease;
+  transition: top .3s ease;
+
+}
+
+nav.smaller {
+  top: 25px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: $buffer;
+  color: $white;
+}
+
+nav li a {
+  @include link-hover();
+}
+
+nav li a:hover {
+  color: $coral;
+  // font-weight: 700;
+}
+
+
+nav a {
+  text-decoration: none;
+  color: $white;
+  font-size: 1.2em;
+}
+
+.nav-logo {
+  display: inline-block;
+}
+
+.nav-logo img {
+  height: 100px;
+  -webkit-transition: height .3s ease;
+  -moz-transition: height .3s ease;
+  -ms-transition: height .3s ease;
+  -o-transition: height .3s ease;
+  transition: height .3s ease;
+}
+
+.nav-logo img.smaller {
+  height: 75px;
+}
+
+// header {
+//     width: 100%;
+//     height: 150px;
+//     overflow: hidden;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     z-index: 999;
+//     background-color: #0683c9;
+//     -webkit-transition: height 0.3s;
+//     -moz-transition: height 0.3s;
+//     -ms-transition: height 0.3s;
+//     -o-transition: height 0.3s;
+//     transition: height 0.3s;
+// }
+// header h1#logo {
+//     display: inline-block;
+//     height: 150px;
+//     line-height: 150px;
+//     float: left;
+//     font-family: "Oswald", sans-serif;
+//     font-size: 60px;
+//     color: white;
+//     font-weight: 400;
+//     -webkit-transition: all 0.3s;
+//     -moz-transition: all 0.3s;
+//     -ms-transition: all 0.3s;
+//     -o-transition: all 0.3s;
+//     transition: all 0.3s;
+// }
+// header nav {
+//     display: inline-block;
+//     float: right;
+// }
+// header nav a {
+//     line-height: 150px;
+//     margin-left: 20px;
+//     color: #9fdbfc;
+//     font-weight: 700;
+//     font-size: 18px;
+//     -webkit-transition: all 0.3s;
+//     -moz-transition: all 0.3s;
+//     -ms-transition: all 0.3s;
+//     -o-transition: all 0.3s;
+//     transition: all 0.3s;
+// }
+// header nav a:hover {
+//     color: white;
+// }
+// header.smaller {
+//     height: 75px;
+// }
+// header.smaller h1#logo {
+//     width: 150px;
+//     height: 75px;
+//     line-height: 75px;
+//     font-size: 30px;
+// }
+// header.smaller nav a {
+//     line-height: 75px;
+// }
+
+// @media all and (max-width: 660px) {
+//     header h1#logo {
+//         display: block;
+//         float: none;
+//         margin: 0 auto;
+//         height: 100px;
+//         line-height: 100px;
+//         text-align: center;
+//     }
+//     header nav {
+//         display: block;
+//         float: none;
+//         height: 50px;
+//         text-align: center;
+//         margin: 0 auto;
+//     }
+//     header nav a {
+//         line-height: 50px;
+//         margin: 0 10px;
+//     }
+//     header.smaller {
+//         height: 75px;
+//     }
+//     header.smaller h1#logo {
+//         height: 40px;
+//         line-height: 40px;
+//         font-size: 30px;
+//     }
+//     header.smaller nav {
+//         height: 35px;
+//     }
+//     header.smaller nav a {
+//         line-height: 35px;
+//     }
+// }

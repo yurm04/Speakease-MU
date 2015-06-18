@@ -82,7 +82,7 @@
 		<h2>See What Our Students Are Saying</h2>
 		<div class="review-wrapper">	
 			<div class="arrow"><span class="icon-left"></span></div>
-			<article class="review text-block wrapper">
+			<article class="review text-block wrapper active">
 				<div class="stars">
 					<span class="icon-star-full"></span>
 					<span class="icon-star-full"></span>
@@ -95,6 +95,34 @@
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. A facere labore beatae fugit ratione tenetur vel explicabo, odio maiores ducimus vitae eaque voluptates minima possimus voluptatum cupiditate deserunt culpa quas dolorem eius. Repellendus, unde, fugit repudiandae necessitatibus quidem expedita voluptate aspernatur quo cupiditate excepturi perferendis magnam eos nisi eveniet laborum! Quo praesentium vel commodi soluta. Recusandae a aut excepturi similique! Quo nulla in velit non cum qui consectetur obcaecati earum repellendus rem quam ad ea voluptates, itaque, amet totam assumenda blanditiis quibusdam harum ducimus ipsum sint consequatur adipisci esse. Facere inventore, voluptatibus accusamus impedit reiciendis, optio omnis dignissimos nihil autem.
 				</p>
 				<h3>- El Viejo</h3>
+			</article>
+			<article class="review text-block wrapper">
+				<div class="stars">
+					<span class="icon-star-full"></span>
+					<span class="icon-star-full"></span>
+					<span class="icon-star-full"></span>
+					<span class="icon-star-full"></span>
+					<span class="icon-star-full"></span>
+				</div>
+				<h3 class="date">May 5, 2015</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. A facere labore beatae fugit ratione tenetur vel explicabo, odio maiores ducimus vitae eaque voluptates minima possimus voluptatum cupiditate deserunt culpa quas dolorem eius. Repellendus, unde, fugit repudiandae necessitatibus quidem expedita voluptate aspernatur quo cupiditate non cum qui consectetur obcaecati earum repellendus rem quam ad ea voluptates, itaque, amet totam assumenda blanditiis quibusdam harum ducimus ipsum sint consequatur adipisci esse. Facere inventore, voluptatibus accusamus impedit reiciendis, optio omnis dignissimos nihil autem.
+				</p>
+				<h3>- Someone else</h3>
+			</article>
+			<article class="review text-block wrapper">
+				<div class="stars">
+					<span class="icon-star-full"></span>
+					<span class="icon-star-full"></span>
+					<span class="icon-star-full"></span>
+					<span class="icon-star-full"></span>
+					<span class="icon-star-full"></span>
+				</div>
+				<h3 class="date">May 5, 2015</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. A facere labore beatae fugit ratione tenetur vel explicabo, odio maiores ducimus vitae eaque voluptates minima possimus voluptatum cupiditate deserunt culpa quas dolorem eius. Repellendus, unde, fugit repudiandae necessitatibus quidem expedita voluptate aspernatur quo cupiditate excepturi perferendis magnam eos nisi eveniet laborum! Quo praesentium vel commodi soluta. Recusandae a aut excepturi similique! Quo nulla in velit non cum qui consectetur obcaecati earum repellendus rem quam ad ea voluptates, itaque, amet totam assumenda blanditiis quibusdam harum ducimus ipsum sint 
+				</p>
+				<h3>- Third Person</h3>
 			</article>
 			<div class="arrow"><span class="icon-right"></span></div>
 		</div>
@@ -109,5 +137,22 @@
 		<hr>
 		<p class="copyright">&copy; Copyright 2015.  Website Design by Yuraima Estevez</p>
 	</footer>
+	
+	<script src="js/jquery-2.1.4.js"></script>
+	<!--
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	-->
+	<script src="js/script.js"></script>
+
+
+		<!-- REVIEWS JS CAROUSEL -->
+	<script>
+		// Right arrow		
+		$(".icon-right").click( function() {
+			$(".review").removeClass("active");
+			$(".review").next().addClass("active");
+		});
+	</script>
+	<!-- REVIEWS JS CAROUSEL -->
 </body>
 </html>

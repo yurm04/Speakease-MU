@@ -500,7 +500,7 @@ section {
 BUTTONS, LINKS, CTAs
 ****************************************************************/
 /* line 29, ../sass/_general.scss */
-.cta, button {
+.cta, .submit {
   display: inline-block;
   text-align: center;
   height: 48px;
@@ -526,19 +526,20 @@ BUTTONS, LINKS, CTAs
 }
 
 /* line 48, ../sass/_general.scss */
-button {
+.submit {
   line-height: 44px;
   margin-top: 16px;
+  width: auto;
 }
 
-/* line 53, ../sass/_general.scss */
-.cta:hover, button:hover {
+/* line 54, ../sass/_general.scss */
+.cta:hover, .submit:hover {
   background-color: #fafafa;
   border-color: #f56f59;
   color: #f56f59;
 }
 
-/* line 59, ../sass/_general.scss */
+/* line 60, ../sass/_general.scss */
 a.link {
   color: #DF887A;
   font-weight: 700;
@@ -549,7 +550,7 @@ a.link {
   transition: color .25s ease;
 }
 
-/* line 66, ../sass/_general.scss */
+/* line 67, ../sass/_general.scss */
 a.link:hover {
   color: #f56f59;
   text-decoration: underline;
@@ -558,14 +559,14 @@ a.link:hover {
 /****************************************************************
 FOOTER
 ****************************************************************/
-/* line 77, ../sass/_general.scss */
+/* line 78, ../sass/_general.scss */
 footer {
   padding: 16px 0;
   text-align: center;
   background-color: #6e7982;
 }
 
-/* line 83, ../sass/_general.scss */
+/* line 84, ../sass/_general.scss */
 footer h3 {
   margin-bottom: 16px;
   color: #fafafa;
@@ -574,12 +575,12 @@ footer h3 {
 /****************************************************************
 REVIEWS
 ****************************************************************/
-/* line 92, ../sass/_general.scss */
+/* line 93, ../sass/_general.scss */
 article {
   text-align: left;
 }
 
-/* line 96, ../sass/_general.scss */
+/* line 97, ../sass/_general.scss */
 .review {
   display: none;
   -webkit-transition: display .3s ease;
@@ -589,52 +590,53 @@ article {
   transition: display .3s ease;
 }
 
-/* line 106, ../sass/_general.scss */
+/* line 107, ../sass/_general.scss */
 .review.active {
   display: inline-block;
 }
 
-/* line 110, ../sass/_general.scss */
+/* line 111, ../sass/_general.scss */
 .review-wrapper {
   display: table;
   padding: 0 10%;
+  height: 290px;
 }
 
-/* line 115, ../sass/_general.scss */
+/* line 117, ../sass/_general.scss */
 .review h3 {
   text-align: left;
   margin-top: 16px;
   font-style: italic;
 }
 
-/* line 121, ../sass/_general.scss */
+/* line 123, ../sass/_general.scss */
 .review.text-block {
   max-width: 80%;
   margin: 0 5%;
 }
 
-/* line 126, ../sass/_general.scss */
+/* line 128, ../sass/_general.scss */
 .stars, .date {
   margin-bottom: 16px;
 }
 
-/* line 130, ../sass/_general.scss */
+/* line 132, ../sass/_general.scss */
 .stars {
   display: inline-block;
 }
 
-/* line 134, ../sass/_general.scss */
+/* line 136, ../sass/_general.scss */
 .date {
   display: inline-block;
 }
 
-/* line 138, ../sass/_general.scss */
+/* line 140, ../sass/_general.scss */
 .icon-star-full {
   color: #f8c48b;
   margin-right: 5px;
 }
 
-/* line 143, ../sass/_general.scss */
+/* line 145, ../sass/_general.scss */
 .instructor .circle {
   width: 350px;
   height: 350px;
@@ -645,25 +647,25 @@ article {
 /****************************************************************
 INSTRUCTOR
 ****************************************************************/
-/* line 154, ../sass/_general.scss */
+/* line 156, ../sass/_general.scss */
 .instructor {
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 159, ../sass/_general.scss */
+/* line 161, ../sass/_general.scss */
 .showcase {
   display: inline-block;
   text-align: center;
 }
 
-/* line 164, ../sass/_general.scss */
+/* line 166, ../sass/_general.scss */
 .showcase h3 {
   margin-top: 16px;
   margin-bottom: .2em;
 }
 
-/* line 169, ../sass/_general.scss */
+/* line 171, ../sass/_general.scss */
 .showcase li {
   display: inline;
   font-family: 'Josefin Slab', Georgia, 'Times New Roman', serif;
@@ -671,24 +673,24 @@ INSTRUCTOR
   font-size: 18px;
 }
 
-/* line 176, ../sass/_general.scss */
+/* line 178, ../sass/_general.scss */
 .showcase li:after {
   content: ' | ';
   padding: 0 8px;
 }
 
-/* line 181, ../sass/_general.scss */
+/* line 183, ../sass/_general.scss */
 .showcase li:last-child {
   margin-right: none;
 }
 
-/* line 185, ../sass/_general.scss */
+/* line 187, ../sass/_general.scss */
 .showcase li:last-child:after {
   content: none;
   padding: none;
 }
 
-/* line 190, ../sass/_general.scss */
+/* line 192, ../sass/_general.scss */
 .instructor .text-block {
   width: 50%;
   display: inline-block;
@@ -700,7 +702,7 @@ INSTRUCTOR
 /****************************************************************
 CLASSES PAGE
 ****************************************************************/
-/* line 202, ../sass/_general.scss */
+/* line 204, ../sass/_general.scss */
 .box {
   width: 400px;
   height: 555px;
@@ -710,31 +712,31 @@ CLASSES PAGE
   padding-top: 32px;
 }
 
-/* line 211, ../sass/_general.scss */
+/* line 213, ../sass/_general.scss */
 .box:last-child {
   margin-right: 0;
 }
 
-/* line 215, ../sass/_general.scss */
+/* line 217, ../sass/_general.scss */
 .box h3 {
   margin-bottom: 32px;
 }
 
-/* line 219, ../sass/_general.scss */
+/* line 221, ../sass/_general.scss */
 .box .circle {
   width: 125px;
   height: 125px;
   margin-bottom: 32px;
 }
 
-/* line 225, ../sass/_general.scss */
+/* line 227, ../sass/_general.scss */
 .box .circle .icon-user, .box .circle .icon-computer {
   font-size: 3em;
   line-height: 16px;
   line-height: 125px;
 }
 
-/* line 231, ../sass/_general.scss */
+/* line 233, ../sass/_general.scss */
 #combo {
   display: block;
   height: auto;
@@ -743,13 +745,13 @@ CLASSES PAGE
   padding-bottom: 32px;
 }
 
-/* line 239, ../sass/_general.scss */
+/* line 241, ../sass/_general.scss */
 #combo .wrap {
   display: block;
   margin: 0 auto;
 }
 
-/* line 244, ../sass/_general.scss */
+/* line 246, ../sass/_general.scss */
 #combo .circle {
   display: inline-block;
   height: 100px;
@@ -757,13 +759,13 @@ CLASSES PAGE
   margin-bottom: 32px;
 }
 
-/* line 251, ../sass/_general.scss */
+/* line 253, ../sass/_general.scss */
 #combo .circle .icon-user, #combo .circle .icon-computer {
   line-height: 100px;
   font-size: 2.5em;
 }
 
-/* line 256, ../sass/_general.scss */
+/* line 258, ../sass/_general.scss */
 .plus {
   margin: 0 16px;
   font-size: 2em;
@@ -772,7 +774,7 @@ CLASSES PAGE
 /****************************************************************
 RATES PAGE
 ****************************************************************/
-/* line 265, ../sass/_general.scss */
+/* line 267, ../sass/_general.scss */
 .compare {
   width: 520px;
   height: 250px;
@@ -782,7 +784,7 @@ RATES PAGE
   text-align: center;
 }
 
-/* line 274, ../sass/_general.scss */
+/* line 276, ../sass/_general.scss */
 .combine {
   display: table-cell;
   vertical-align: middle;
@@ -791,24 +793,24 @@ RATES PAGE
   margin: 0 auto;
 }
 
-/* line 282, ../sass/_general.scss */
+/* line 284, ../sass/_general.scss */
 .compare h3 {
   display: inline-block;
   margin-right: 64px;
 }
 
-/* line 287, ../sass/_general.scss */
+/* line 289, ../sass/_general.scss */
 .title {
   display: inline-block;
   margin-right: 64px;
 }
 
-/* line 292, ../sass/_general.scss */
+/* line 294, ../sass/_general.scss */
 .title:last-child {
   margin-right: 0;
 }
 
-/* line 296, ../sass/_general.scss */
+/* line 298, ../sass/_general.scss */
 .title h3 {
   font-family: 'Josefin Slab', Georgia, 'Times New Roman', serif;
   display: block;
@@ -816,7 +818,7 @@ RATES PAGE
   margin-bottom: 16px;
 }
 
-/* line 303, ../sass/_general.scss */
+/* line 305, ../sass/_general.scss */
 .compare .circle {
   width: 100px;
   height: 100px;
@@ -826,7 +828,7 @@ RATES PAGE
   display: inline-block;
 }
 
-/* line 312, ../sass/_general.scss */
+/* line 314, ../sass/_general.scss */
 #extra-margin {
   margin-right: 90px;
 }
@@ -834,13 +836,13 @@ RATES PAGE
 /****************************************************************
 TABLE
 ****************************************************************/
-/* line 320, ../sass/_general.scss */
+/* line 322, ../sass/_general.scss */
 table {
   margin-top: 32px;
   color: #545454;
 }
 
-/* line 324, ../sass/_general.scss */
+/* line 326, ../sass/_general.scss */
 table, td {
   border: 1px #545454 solid;
   border-collapse: collapse;
@@ -849,7 +851,7 @@ table, td {
   width: 100%;
 }
 
-/* line 332, ../sass/_general.scss */
+/* line 334, ../sass/_general.scss */
 td {
   padding: 1em;
 }
@@ -857,18 +859,18 @@ td {
 /****************************************************************
 FORM
 ****************************************************************/
-/* line 340, ../sass/_general.scss */
+/* line 342, ../sass/_general.scss */
 form {
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 345, ../sass/_general.scss */
-form button {
+/* line 347, ../sass/_general.scss */
+form .submit {
   margin-left: 180px;
 }
 
-/* line 349, ../sass/_general.scss */
+/* line 351, ../sass/_general.scss */
 .form {
   text-align: left;
   width: 500px;
@@ -878,19 +880,19 @@ form button {
   background-color: #F0F0F0;
 }
 
-/* line 358, ../sass/_general.scss */
+/* line 360, ../sass/_general.scss */
 .form > div {
   display: block;
   margin: 0 auto 16px auto;
 }
 
-/* line 363, ../sass/_general.scss */
+/* line 365, ../sass/_general.scss */
 label {
-  display: block;
+  display: inline-block;
   margin-bottom: 5px;
 }
 
-/* line 368, ../sass/_general.scss */
+/* line 370, ../sass/_general.scss */
 input, textarea {
   width: 90%;
   display: block;
@@ -905,25 +907,25 @@ input, textarea {
   transition: box-shadow .1s ease;
 }
 
-/* line 383, ../sass/_general.scss */
+/* line 385, ../sass/_general.scss */
 input:focus, textarea:focus {
   outline: none;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-/* line 388, ../sass/_general.scss */
+/* line 390, ../sass/_general.scss */
 textarea {
   resize: none;
   font-family: Lato, 'Helvetica Nueue', Helvetica, sans-serif;
 }
 
-/* line 393, ../sass/_general.scss */
+/* line 395, ../sass/_general.scss */
 .message {
   display: block;
 }
 
-/* line 397, ../sass/_general.scss */
-.notice {
+/* line 399, ../sass/_general.scss */
+.notice, .required {
   color: #f56f59;
   font-style: italic;
   font-variant: small-caps;
@@ -931,14 +933,33 @@ textarea {
   margin-bottom: 1em;
 }
 
-/* line 405, ../sass/_general.scss */
+/* line 407, ../sass/_general.scss */
+.required {
+  display: inline-block;
+  text-align: right;
+  float: right;
+  padding-right: 35px;
+  opacity: 0;
+  -webkit-transition: opacity .3s ease;
+  -moz-transition: opacity .3s ease;
+  -ms-transition: opacity .3s ease;
+  -o-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+
+/* line 421, ../sass/_general.scss */
+.required.invalid {
+  opacity: 1;
+}
+
+/* line 425, ../sass/_general.scss */
 .empty {
   color: #6e7982;
   font-style: italic;
   font-variant: small-caps;
 }
 
-/* line 411, ../sass/_general.scss */
+/* line 431, ../sass/_general.scss */
 .missing {
   outline: normal;
   outline-color: #f56f59;

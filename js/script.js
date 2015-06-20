@@ -19,11 +19,5 @@ $( function() {
       $(".nav-logo img").removeClass("smaller");
     }
   });
-
-
-  //////////////////////
-  // REVIEWS CAROUSEL //
-  //////////////////////
-
   
 } );

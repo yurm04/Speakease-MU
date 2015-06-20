@@ -147,10 +147,35 @@
 
 		<!-- REVIEWS JS CAROUSEL -->
 	<script>
+		// Get reviews
+		var reviews = $(".review");
+		var max = reviews.length - 1;
+		var min = 0;
+
 		// Right arrow		
 		$(".icon-right").click( function() {
-			$(".review").removeClass("active");
-			$(".review").next().addClass("active");
+			var activeReview = $(".review.active");
+			var i = reviews.index(activeReview);
+			if (i === max) {
+				$(reviews[i]).removeClass("active");
+				$(reviews[0]).addClass("active");
+			} else {
+				$(reviews[i]).removeClass("active");
+				$(reviews[i + 1]).addClass("active");
+			}
+		});
+
+		// Left Arrow
+		$(".icon-left").click( function() {
+			var activeReview = $(".review.active");
+			var i = reviews.index(activeReview);
+			if (i === min) {
+				$(reviews[i]).removeClass("active");
+				$(reviews[max]).addClass("active");
+			} else {
+				$(reviews[i]).removeClass("active");
+				$(reviews[i - 1]).addClass("active");
+			}
 		});
 	</script>
 	<!-- REVIEWS JS CAROUSEL -->

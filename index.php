@@ -1,38 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Speakease - Learn Spanish With Ease</title>
-	<meta name="description" content="Learn to speak spanish with ease.  Speak Ease is a language tutoring service that provides spanish lessons to students of all levels">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- <link rel="stylesheet" href="assets/css/normalize.css"> -->
-	<!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
-	<link rel="stylesheet" href="assets/css/fonts.css">
-	<link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
-	
-	<!-- HEADER -->
-	<div class="header-bg">
-		<header>
-			<div class="logo-header">
-				<div class="wrapper">
-					<a href="index.html" class="nav-logo"><img src="images/logo-small.png" alt="SpeakEase"></a>
-					<nav >
-						<ul>
-							<li><a href="classes.html">Classes</a></li>
-							<li><a href="about.html">Instructor</a></li>
-							<li><a href="rates.html">Rates</a></li>
-							<li><a href="contact.html">Contact Us</a></li>
-						
-						</ul>
-					</nav>
-				</div>
-			</div>
-			<h1>Spanish Made Easy</h1>
-		</header>
-	</div>
-	<!-- HEADER -->
+<?php include('header.php'); ?>
 
 	<!-- INTRO -->
 	<section class="bg-white text-center">
@@ -41,7 +7,7 @@
 			<p class="text-block">
 				At Speak Ease, we understand that each student learns at their own pace and with their own style.  We do our best to make sure every language learning experience is as unique as our pupils.  Since there is no "one size fits all" approach to learning a new language, we work hard to make sure we find the perfectly tailored lesson plan for each person. Everybody’s experience is different, and made just for them.
 			</p>
-			<a href="classes.html" class="cta">explore our classes</a>
+			<a href="classes.php" class="cta">explore our classes</a>
 		</div>
 	</section>
 
@@ -126,17 +92,9 @@
 			</article>
 			<div class="arrow"><span class="icon-right"></span></div>
 		</div>
-		<a href="about.html" class="cta">get to know the instructor</a>
+		<a href="about.php" class="cta">get to know the instructor</a>
 	</section>
 	<!-- REVIEWS -->
-
-	<!-- FOOTER -->
-	<footer>
-		<h3>Just Want To Say Hello?</h3>
-		<a href="contact.html" class="link">Send Me A Message &rarr;</a>
-		<hr>
-		<p class="copyright">&copy; Copyright 2015.  Website Design by Yuraima Estevez</p>
-	</footer>
 	
 	<script src="js/jquery-2.1.4.js"></script>
 	<!--
@@ -179,5 +137,5 @@
 		});
 	</script>
 	<!-- REVIEWS JS CAROUSEL -->
-</body>
-</html>
+
+<?php include('footer.php'); ?>

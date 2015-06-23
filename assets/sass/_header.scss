@@ -4,7 +4,8 @@ NAVIGATION AND HEADER
 
 .header-bg {
   max-height: 355px;
-  padding: 100px 0 117px 0;
+  // padding: 100px 0 117px 0;
+  padding-top: 100px;
   background: $pattern-blue url(../../images/confectionary.png) repeat right top;
 }
 
@@ -45,6 +46,28 @@ NAVIGATION AND HEADER
   background-color: $blue;
   padding: 5px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+header {
+  overflow: hidden;
+}
+
+header h1{
+  height: 180px;
+  position: relative;
+  top: 170px;
+  opacity: 0;
+  -webkit-transition: all .7s cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: all .7s cubic-bezier(0.4, 0, 0.2, 1);
+  -ms-transition: all .7s cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: all .7s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all .7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+header h1.appear {
+  position: relative;
+  top: 0;
+  opacity: 1;
 }
 
 nav {

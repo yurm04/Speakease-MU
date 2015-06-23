@@ -111,13 +111,17 @@ article {
 .review-wrapper {
   display: table;
   padding: 0 10%;
-  height: 290px;
+  height: 200px;
 }
 
-.review h3 {
+.review p {
+  margin-bottom: $quarter-buffer;
+}
+
+.review a {
   text-align: left;
-  margin-top: $quarter-buffer;
   font-style: italic;
+  color: $coral;
 }
 
 .review.text-block {
@@ -208,6 +212,15 @@ CLASSES PAGE
   background-color: $light-grey;
   display: inline-block;
   padding-top: $half-buffer;
+}
+
+.box#nudge {
+  position: relative;
+  top: -22px;
+}
+
+#nudge p {
+  margin-bottom: 54px;
 }
 
 .box:last-child {

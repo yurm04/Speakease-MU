@@ -5,7 +5,7 @@
 		<div class="wrapper">
 			<h2>Language Learning is an Experience</h2>
 			<p class="text-block">
-				At Speak Ease, we understand that each student learns at their own pace and with their own style.  We do our best to make sure every language learning experience is as unique as our pupils.  Since there is no "one size fits all" approach to learning a new language, we work hard to make sure we find the perfectly tailored lesson plan for each person. Everybody’s experience is different, and made just for them.
+				At Speak Ease, we believe that learning Spanish should be easy. We understand that each student learns at their own pace and with their own style, so we do our best to make sure every language learning experience is as unique as our pupils. We offer classes <span class="emphasis">in-person, online and a combination of both</span> to teach students of all skill levels. Everybody’s experience is different, and made just for them. So, if you’re ready to embark on your language-learning voyage, then we’re ready to take you where you need to go!
 			</p>
 			<a href="classes.php" class="cta">explore our classes</a>
 		</div>
@@ -21,21 +21,21 @@
 					<div class="circle"><span class="icon-airplane"></span></div>
 					<h3 class="desc-head">Travel the world</h3>
 					<p class="text-center">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus nulla autem, quos obcaecati vitae asperiores necessitatibus illo omnis, nostrum sequi ad, tempore ullam sint iusto?
+						As the official language of over 20 countries in South America, Europe and Africa, knowing Spanish could be the difference between leading the life of a lost tourist or a seasoned local on your next vacation.
 					</p>
 				</div>
 				<div class="third">
 					<div class="circle"><span class="icon-bubbles4"></span></div>
 					<h3 class="desc-head">Make new friends</h3>
 					<p class="text-center">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quis voluptatibus fugiat, eum dolores, et hic reiciendis aliquam. Facilis aut quam ducimus labore reprehenderit, autem.
+						Language can be a barrier or a door—you decide. With SpeakEase, we want to equip you with the key that opens the door to new friends and new social opportunities!
 					</p>
 				</div>
 				<div class="third">
 					<div class="circle"><span class="icon-user-tie"></span></div>
 					<h3 class="desc-head">Better your career</h3>
 					<p class="text-center">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium ut tenetur possimus velit ipsam voluptas commodi consectetur, consequatur dolorum id. Perferendis doloremque aliquid neque excepturi.
+						Spanish is the fastest growing language in the U.S. and more employers are looking for Spanish speakers. Exciting new career opportunities for fluent linguists can all be available to you!
 					</p>
 				</div>
 			</div>
@@ -56,11 +56,11 @@
 					<span class="icon-star-full"></span>
 					<span class="icon-star-full"></span>
 				</div>
-				<h3 class="date">May 5, 2015</h3>
+				<h3 class="date">June 3, 2015</h3>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. A facere labore beatae fugit ratione tenetur vel explicabo, odio maiores ducimus vitae eaque voluptates minima possimus voluptatum cupiditate deserunt culpa quas dolorem eius. Repellendus, unde, fugit repudiandae necessitatibus quidem expedita voluptate aspernatur quo cupiditate excepturi perferendis magnam eos nisi eveniet laborum! Quo praesentium vel commodi soluta. Recusandae a aut excepturi similique! Quo nulla in velit non cum qui consectetur obcaecati earum repellendus rem quam ad ea voluptates, itaque, amet totam assumenda blanditiis quibusdam harum ducimus ipsum sint consequatur adipisci esse. Facere inventore, voluptatibus accusamus impedit reiciendis, optio omnis dignissimos nihil autem.
+					Maria is very punctual and always prepared. Her command of English is excellent which is a great help in her explaining some of the more difficult Spanish irregularities.  I would highly recommend her for any level from beginner to advanced.
 				</p>
-				<h3>- El Viejo</h3>
+				<a href="https://tack.bz/2jOt7" target="_blank">- Beverly B.</a>
 			</article>
 			<article class="review text-block wrapper">
 				<div class="stars">
@@ -70,11 +70,11 @@
 					<span class="icon-star-full"></span>
 					<span class="icon-star-full"></span>
 				</div>
-				<h3 class="date">May 5, 2015</h3>
+				<h3 class="date">February 12, 2015</h3>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. A facere labore beatae fugit ratione tenetur vel explicabo, odio maiores ducimus vitae eaque voluptates minima possimus voluptatum cupiditate deserunt culpa quas dolorem eius. Repellendus, unde, fugit repudiandae necessitatibus quidem expedita voluptate aspernatur quo cupiditate non cum qui consectetur obcaecati earum repellendus rem quam ad ea voluptates, itaque, amet totam assumenda blanditiis quibusdam harum ducimus ipsum sint consequatur adipisci esse. Facere inventore, voluptatibus accusamus impedit reiciendis, optio omnis dignissimos nihil autem.
+					We've met twice so far and I am very pleased with the quality of these tutoring sessions. Maria has been very flexible to meet my special requests regarding the material that we would like to cover and how we would like to study. I appreciate also that she is willing to travel to our home to providing a 1.5 hour lesson to two people of differing Spanish ability. We look forward to many more sessions and much improvement to our Spanish!
 				</p>
-				<h3>- Someone else</h3>
+				<a href="https://tack.bz/2jOt7" target="_blank">- Christina A.</a>
 			</article>
 			<article class="review text-block wrapper">
 				<div class="stars">
@@ -84,11 +84,11 @@
 					<span class="icon-star-full"></span>
 					<span class="icon-star-full"></span>
 				</div>
-				<h3 class="date">May 5, 2015</h3>
+				<h3 class="date">October 21, 2014</h3>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. A facere labore beatae fugit ratione tenetur vel explicabo, odio maiores ducimus vitae eaque voluptates minima possimus voluptatum cupiditate deserunt culpa quas dolorem eius. Repellendus, unde, fugit repudiandae necessitatibus quidem expedita voluptate aspernatur quo cupiditate excepturi perferendis magnam eos nisi eveniet laborum! Quo praesentium vel commodi soluta. Recusandae a aut excepturi similique! Quo nulla in velit non cum qui consectetur obcaecati earum repellendus rem quam ad ea voluptates, itaque, amet totam assumenda blanditiis quibusdam harum ducimus ipsum sint 
+					I Highly Recommend Maria Moreno to anyone who wants to learn spanish or build on what they already know. Maria goes above and beyond to help you speak,comprehend and retain the lessons. She is always very prompt with class times and flexible with any changes that I have had in times or days. I would not change any thing about the way her classes are taught. I appreciate everything she has helped me with so far.
 				</p>
-				<h3>- Third Person</h3>
+				<a href="https://tack.bz/2jOt7" target="_blank">- Brian T.</a>
 			</article>
 			<div class="arrow"><span class="icon-right"></span></div>
 		</div>

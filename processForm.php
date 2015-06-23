@@ -7,11 +7,11 @@
   https://bootstrapbay.com/blog/working-bootstrap-contact-form/
  */
 
-
+// REDEFINE BASE_URL TO WHATEVER THE LOCAL URL IS
 define('BASE_URL', 'http://www.speak-ease.com/');
-define('SUCCESS', 'contactConfirm.php');
-define('FAILURE', 'contactFailure.php');
-define('EMAIL_ADDRESS', 'yurm04@gmail.com');
+define('SUCCESS', BASE_URL . 'contactConfirm.php');
+define('FAILURE', BASE_URL .'contactFailure.php');
+define('EMAIL_ADDRESS', 'maria@speak-ease.com');
 
 // PROCESS & VALIDATE
 
@@ -22,45 +22,42 @@ function processFormInput()
     $email = '';
     $message = '';
 
-    if ( issset($_POST['username']) ) {
+    if ( isset($_POST['username']) ) {
       $name = filter_var( $_POST['username'], FILTER_SANITIZE_STRING );
     }
     
-    if ( issset($_POST['email']) ) {
+    if ( isset($_POST['email']) ) {
       $email = filter_var( $_POST['email'], FILTER_SANITIZE_STRING );
     }
     
-    if ( issset($_POST['message']) ) {
+    if ( isset($_POST['message']) ) {
       $message = filter_var( $_POST['message'], FILTER_SANITIZE_STRING );
     }
 
     if ($name && $email && $message) {
-      sendEmail($name, $mail, $message);
-      $success = BASE_URL . SUCCESS;
-      header('location: ' . $success);
+      sendEmail($name, $email, $message);
+      header('Location: ' . SUCCESS);
     } else {
-      $failed = BASE_URL . FAILURE;
-      header('location: ' . $failed);
+      header('Location: ' . FAILURE);
     }
   } else {
-    $failed = BASE_URL . FAILURE;
-    header('location: ' . $failed);
+    header('Location: ' . FAILURE);
   }
 }
 
 
-function sendEmail($name, $mail, $message)
+function sendEmail($name, $email, $message)
 {
   //send email if all is ok
-  $headers = "From: info@example.com" . "\r\n";
+  $headers = "From: info@speak-ease.com" . "\r\n";
   $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
    
-  $body = "<p>You have recieved a new message $name</p>
+  $body = "<p>You have recieved a new message from  <strong>$name</strong></p>
               <p><strong>Name: </strong> {$name} </p>
               <p><strong>Email Address: </strong> {$email} </p>
               <p><strong>Message: </strong> {$message} </p>";
    
-  mail(EMAIL_ADDRESS ,"New Message", $body, $headers);
+  mail(EMAIL_ADDRESS ,"New Message From $name", $body, $headers);
 }
 
 

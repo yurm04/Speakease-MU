@@ -1,6 +1,14 @@
 $( function() {
 
   //////////////////////
+  // HEADER ANIMATION //
+  //////////////////////
+
+  $(window).load( function() {
+    $("header h1").addClass("appear");
+  });
+
+  //////////////////////
   // HEADER ON SCROLL //
   //////////////////////
 
@@ -12,6 +20,7 @@ $( function() {
       $(".logo-header").addClass("smaller");
       $("nav").addClass("smaller");
       $(".nav-logo img").addClass("smaller");
+      $("header h1").addClass("appear");
     } else {
       // Otherwise remove the class
       $(".logo-header").removeClass("smaller");

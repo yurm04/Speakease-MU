@@ -11,17 +11,17 @@
         <div id="enterUsername">
           <label for="username">Name: </label>
           <p class="required" id="requiredName">Please enter a valid name</p>
-          <input type="text" name="username" id="username" placeholder="Enter your name" onblur="checkCorrect(this)" class="empty">
+          <input type="text" name="username" id="username" placeholder="Enter your name" onblur="checkCorrect(this)">
         </div>
         <div id="enterEmail">
           <label for="email">Email: </label>
           <p class="required" id="requiredEmail">Please enter a valid email</p>
-          <input type="text" name="email" id="email" placeholder="you@email.com" onblur="checkEmail(this)" class="empty">
+          <input type="text" name="email" id="email" placeholder="you@email.com" onblur="checkEmail(this)">
         </div>
         <div id="enterMessage">
           <label for="message">Message: </label>
           <p class="required" id="requireMessage">please enter a valid message</p>
-          <textarea name="message" id="message" cols="30" rows="10" class="empty" placeholder="What's on your mind..." onblur="isEmpty(this)"></textarea>
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="What's on your mind..." onblur="isEmpty(this)"></textarea>
         </div>
         <input type="submit" class="submit" name="contact-form">
       </div>
@@ -45,6 +45,7 @@
       var username = checkCorrect(form.username);
       var email = checkEmail(form.email);
       var message = isEmpty(form.message);
+      // var message = checkCorrect(form.message);
       
       if (!username || !message || !email) {
         return false;
@@ -66,11 +67,10 @@
     var isEmpty = function(val) {
       var regex = /\S/;
       if (regex.test(val.value)) {
+        removeInvalid(val);
         return true
-        alert('true');
       }
-      alert('false');
-      
+      setInvalid(val);
       return false;
     }
 
@@ -104,12 +104,10 @@
     var setInvalid = function(el) {
       // Add invalid class to classlist
       el.parentNode.querySelector(".required").classList.add("invalid");
-      el.classList.add("empty");
     };
 
     var removeInvalid = function(el) {
       el.parentNode.querySelector(".required").classList.remove("invalid");
-      el.classList.remove("empty");
     }
   </script>
 

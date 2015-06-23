@@ -15,7 +15,7 @@
             </ul>
           </div>
           <p class="center text-block">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam maiores recusandae dolorum consequatur dolor quo rem! Autem, delectus tempora necessitatibus, unde distinctio maiores fugit tenetur! Illum suscipit illo tempora a quas maxime harum, maiores nam nihil alias et repudiandae quasi minus mollitia magni doloremque quis. Molestias, velit. Similique, commodi, aliquam!
+            My name is Maria Isabel, my first language is spanish, worked as a Teacher Assistant/Spanish interpreter for several years. I am a self-taught linguist who learned English after moving to the U.S. Now, I want to be able you learn Spanish. Let me help you open the door to more opportunities by tutoring you in speaking, reading and writing Spanish.
           </p>
         </div>
       </article>

@@ -185,12 +185,12 @@ INSTRUCTOR
 }
 
 .showcase li:last-child {
-  margin-right: none;
+  margin-right: 0;
 }
 
 .showcase li:last-child:after {
   content: none;
-  padding: none;
+  padding: 0;
 }
 
 .instructor .text-block {
@@ -389,7 +389,7 @@ input, textarea {
   border-radius: 3px;
 
   -webkit-transition: box-shadow .1s ease;
-     -mox-transition: box-shadow .1s ease;
+     -moz-transition: box-shadow .1s ease;
       -ms-transition: box-shadow .1s ease;
        -o-transition: box-shadow .1s ease;
           transition: box-shadow .1s ease;
@@ -439,9 +439,4 @@ textarea {
   color: $grey;
   font-style: italic;
   font-variant: small-caps;
-}
-
-.missing {
-  outline: normal;
-  outline-color: $coral;
 }

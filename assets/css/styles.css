@@ -296,77 +296,6 @@ ICON FONTS
 }
 
 /****************************************************************
-ICON FONTS
-****************************************************************/
-/*
-@font-face {
-	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?vri0ou');
-	src:url('fonts/icomoon.eot?#iefixvri0ou') format('embedded-opentype'),
-		url('fonts/icomoon.ttf?vri0ou') format('truetype'),
-		url('fonts/icomoon.woff?vri0ou') format('woff'),
-		url('fonts/icomoon.svg?vri0ou#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-[class^="icon-"], [class*=" icon-"] {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	color: $blue;					// YE added
-	text-shadow: 0 1px 3px rgba(110, 121, 130, .2);		// YE added
-
-	
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.icon-bubbles4:before {
-	content: "\e970";
-}
-.icon-user-tie:before {
-	content: "\e976";
-}
-.icon-airplane:before {
-	content: "\e9af";
-}
-.icon-star-full:before {
-	content: "\e9d9";
-}
-.icon-right:before {
-	content: "\ea42";
-}
-.icon-left:before {
-	content: "\ea44";
-}
-
-.circle [class^="icon-"], .circle [class*=" icon-"]{
-	line-height: 3em;
-	font-size: 3em;
-}
-
-.icon-left, .icon-right {
-	display: inline-block;
-	color: rgba(146, 150, 154, 0.5);
-	font-size: 3em;
-	text-shadow: none;
-	transition: text-shadow .5s ease,
-							color .5s ease;
-}
-
-.icon-left:hover, .icon-right:hover {
-	text-shadow: 0 1px 3px rgba(110, 121, 130, .2);		// YE added
-	color: $light-coral;
-	cursor: pointer;
-}
-
-*/
-/****************************************************************
 NAVIGATION AND HEADER
 ****************************************************************/
 /* line 5, ../sass/_header.scss */
@@ -711,13 +640,13 @@ INSTRUCTOR
 
 /* line 187, ../sass/_general.scss */
 .showcase li:last-child {
-  margin-right: none;
+  margin-right: 0;
 }
 
 /* line 191, ../sass/_general.scss */
 .showcase li:last-child:after {
   content: none;
-  padding: none;
+  padding: 0;
 }
 
 /* line 196, ../sass/_general.scss */
@@ -942,7 +871,7 @@ input, textarea {
   border: none;
   border-radius: 3px;
   -webkit-transition: box-shadow .1s ease;
-  -mox-transition: box-shadow .1s ease;
+  -moz-transition: box-shadow .1s ease;
   -ms-transition: box-shadow .1s ease;
   -o-transition: box-shadow .1s ease;
   transition: box-shadow .1s ease;
@@ -998,10 +927,4 @@ textarea {
   color: #6e7982;
   font-style: italic;
   font-variant: small-caps;
-}
-
-/* line 444, ../sass/_general.scss */
-.missing {
-  outline: normal;
-  outline-color: #f56f59;
 }

@@ -68,11 +68,11 @@
       var regex = /\S/;
       if (regex.test(val.value)) {
         removeInvalid(val);
-        return true
+        return true;
       }
       setInvalid(val);
       return false;
-    }
+    };
 
     /*
      *  Using regex and test function to validate
@@ -108,7 +108,7 @@
 
     var removeInvalid = function(el) {
       el.parentNode.querySelector(".required").classList.remove("invalid");
-    }
+    };
   </script>
 
   <?php include('contactFooter.php'); ?>
